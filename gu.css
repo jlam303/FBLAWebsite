@@ -1,1 +1,45 @@
-
+.item1{
+    grid-area: header;
+    border: 2px solid blue;
+}
+.item2 {
+    grid-area: main;
+    border: 2px solid blue;
+}
+.item3 {
+    grid-area: footer;
+    border: 2px solid blue;
+}
+.item4 {
+    grid-area: about;
+    border: 2px solid blue;
+}
+.item5 {
+    grid-area: menu;
+    border: 2px solid blue;
+}
+.item6 {
+    grid-area: reservation;
+    border: 2px solid blue;
+}
+.item7 {
+    grid-area: gallery;
+    border: 2px solid blue;
+}
+.item8 {
+    grid-area: contact;
+    border: 2px solid blue;
+}
+.container{
+    height:200vh;
+    border:2px solid blue;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
+    grid-template-rows: [r1] 20vh [r2] 140vh [r3] 40vh;
+    grid-template-areas: 
+    "header header about menu reservation gallery contact"
+    "main main main main main main main"
+    "footer footer footer footer footer footer footer"
+    ;
+}
