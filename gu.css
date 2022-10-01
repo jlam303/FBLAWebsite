@@ -1,6 +1,14 @@
+.container > div > a{
+    text-decoration: none;
+    color: black;
+    font-family: "Le Font";
+    font-size: 10vh;
+}
 .item1{
     grid-area: header;
     border: 2px solid blue;
+    font-family: "Le Font";
+    font-size:15vh;
 }
 .item2 {
     grid-area: main;
@@ -35,11 +43,15 @@
     border:2px solid blue;
     display: grid;
     gap: 5px;
-    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
+    grid-template-columns: [c1] 2fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
     grid-template-rows: [r1] 20vh [r2] 140vh [r3] 40vh;
     grid-template-areas: 
     "header header about menu reservation gallery contact"
     "main main main main main main main"
     "footer footer footer footer footer footer footer"
     ;
+}
+@font-face {
+    font-family: "Le Font";
+    src: url(Maytra.ttf);
 }
