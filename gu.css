@@ -28,7 +28,7 @@ body{
 }
 .footer {
     grid-area: footer;
-     
+    background-color: aqua;
 }
 .about {
      
@@ -39,20 +39,19 @@ body{
 .reservation {
      
 }
-.gallery {
+.home {
      
 }
 .contact{
      
 }
 .container{
-    height:200vh;
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: [c1] 2fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
     grid-template-rows: auto;
     grid-template-areas: 
-    "aside aside main main main main main"
+    "aside main main main main main main"
     "footer footer footer footer footer footer footer"
     ;
 }
