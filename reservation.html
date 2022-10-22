@@ -8,9 +8,76 @@
     <meta property="og:description" content="Website for Gusteau's Restaurant">
     <meta property="og:title" content="Gusteau's Restaurant">
     <link rel="icon" href="" type="image">
-    <link rel="stylesheet" href="gu.css">
+    <link rel="stylesheet" href="reservation.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gusteau's</title>
 </head>
+
+<body id="bodyID">
+    <nav class="nav">
+        <div class="logo"><img src="g.png" alt="Gusteau Logo" width="100px" height="100px"></div>
+        <div class="about"><a href="about.html">About</a></div>
+        <div class="menu"><a href="menu.html">Menu</a></div>
+        <div class="reservation"><a href="reservation.html">Reservation</a></div>
+        <div class="gallery"><a href="gallery.html">Gallery</a></div>
+        <div class="contact"><a href="contact.html">Contact</a></div>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <h1 class="title">Reservations</h1>
+
+            <div class="flexcontainer">
+
+                <p> Welcome to Gusteau's reservation page.
+                    Here you can reserve your experience at Arizona's best
+                    French Cuisine.
+                <br>
+                We invite you to join us to the heart of France, Gusteau's.
+                <br>
+                
+                </p>
+
+                <div class="reserveform">
+                    <form>
+                        <!-- <label for="name">Name</label>
+                        <input type="text" id="name" name="user.name" required>
+                        <br>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="visitor_phone" place-holder="000-000-0000" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email.name" required>
+                        <br>
+                        <textarea id="request" name="specialrequest" rows="4" cols="50">Input your special request here.</textarea>
+                        <br>
+                        <div class="inline-ages"> -->
+                            <div class="group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="visitorname" placeholder="Francis Gusteau" required>
+                            </div>
+                            <div class="group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="visitoremail" placeholder="FGusteau@email.com" required>
+                            </div>
+                            <div class="group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phonenumber" name="visitor_phone" placeholder="000-000-0000"
+                                    required>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>        
+            </div>
+
+
+
+        </div>
+        <div class="footer">Footer</div>
+        
+    </div>    
+    <script src="gu.js"></script>
+</body>
+</html>

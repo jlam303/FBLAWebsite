@@ -1,0 +1,123 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: aqua;
+    border-bottom: solid black 2px;
+}
+
+.nav>div>a {
+    text-decoration: none;
+    color: black;
+    font-size: 5vh;
+}
+
+.logo {
+    font-size: 15vh;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.footer {
+    grid-area: footer;
+
+}
+
+.about {}
+
+.menu {}
+
+.reservation {}
+
+.gallery {}
+
+.contact {}
+
+.container {
+    height: 200vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
+    grid-template-rows: auto;
+    grid-template-areas:
+        "main main main main main main main"
+        "footer footer footer footer footer footer footer"
+    ;
+}
+
+@font-face {
+    font-family: "Fancy";
+    src: url(Maytra.ttf);
+}
+
+.title{
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+    font-family: "Fancy";
+        src: url(Maytra.ttf);
+        font-size: 4rem;
+}
+
+.flexcontainer{
+    display: flex;
+}
+/* 
+body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+} */
+
+div.group {
+    margin: 20px 0;
+}
+
+div.group.inlined {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+
+input,
+select,
+textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+}
+
+div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+
+textarea {
+    height: 250px;
+}
