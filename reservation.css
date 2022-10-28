@@ -96,7 +96,7 @@ div.group.inlined {
 
 label {
     display: block;
-    font-family: 'Nanum Gothic';
+    
     padding-bottom: 10px;
     font-size: 1.25em;
 }
@@ -105,10 +105,9 @@ input,
 select,
 textarea {
     border-radius: 2px;
-    border: 2px solid #777;
+    border: 2px solid rgb(0, 0, 0);
     box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: 'Nanum Gothic';
+    font-size: 20px;
     width: 100%;
     padding: 10px;
 }
@@ -120,4 +119,8 @@ div.elem-group.inlined input {
 
 textarea {
     height: 250px;
+}
+
+.reserveform{
+    float:right
 }
