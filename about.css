@@ -27,9 +27,13 @@ body {
     grid-area: aside;
 }
 
-.main {
-    grid-area: main;
+.aboutUs {
+    grid-area: aboutUs;
 
+}
+
+.history {
+    grid-area: history;
 }
 
 .footer {
@@ -37,24 +41,47 @@ body {
 
 }
 
-.about {}
+.about {
 
-.menu {}
+}
 
-.reservation {}
+.timeline{
+    grid-area: timeline;
+}
 
-.gallery {}
+.awards{
+    grid-area: awards;
+}
 
-.contact {}
+.menu {
+
+}
+
+.reservation {
+
+}
+
+.gallery {
+
+}
+
+.contact {
+    
+}
 
 .container {
     height: 200vh;
+    margin: auto;
+    width: 50%;
     display: grid;
     gap: 5px;
     grid-template-columns: [c1] 2fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
     grid-template-rows: auto;
     grid-template-areas:
-        "main main main main main main main"
+        "aboutUs aboutUs aboutUs aboutUs aboutUs aboutUs aboutUs"
+        "history history history history history history history"
+        "timeline timeline timeline timeline timeline timeline timeline"
+        "awards awards awards awards awards awards awards"
         "footer footer footer footer footer footer footer"
     ;
 }
