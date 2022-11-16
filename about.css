@@ -41,9 +41,6 @@ body {
 
 }
 
-.about {
-
-}
 
 .timeline{
     grid-area: timeline;
@@ -53,21 +50,6 @@ body {
     grid-area: awards;
 }
 
-.menu {
-
-}
-
-.reservation {
-
-}
-
-.gallery {
-
-}
-
-.contact {
-    
-}
 
 .container {
     height: 200vh;
@@ -85,6 +67,8 @@ body {
         "footer footer footer footer footer footer footer"
     ;
 }
+
+
 
 @font-face {
     font-family: "Fancy";
