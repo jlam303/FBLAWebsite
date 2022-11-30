@@ -49,7 +49,10 @@ body {
 .awards{
     grid-area: awards;
 }
-
+ 
+p{
+    font-size: x-large;
+}
 
 .container {
     height: 200vh;
