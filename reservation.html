@@ -28,83 +28,84 @@
         <div class="main">
             <h1 class="title">Reservations</h1>
 
-    <div class="flexcontainer">
-        <div class="split">
-                <div class="cell1">
-                    <p> 
-                        Welcome to Gusteau's reservation page.
-                        Here you can reserve your experience at Arizona's best
-                        French Kitchen.
-                        <br>
-                        We invite you to join us at the heart of French cuisine, Gusteau's.
-                        <br>
-                    </p>
-                </div>
-            </div>
-
-            <div class="split">
-                <div class="cell2">
-                        
-                        <div class="firstname">
-                            <div class="group">
-                                <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required>
-                            </div>
-                        </div>
-
-                        <div class="lastname">
-                            <div class="group">
-                                <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required>
-                            </div>
-                        </div>
-
-                        <div class="email">
-                            <div class="group">
-                                <input type="email" id="email" name="visitoremail" placeholder="Email" required>
-                            </div>
-                        </div>
-
-                        <div class="pnumber">
-                            <div class="group">
-                                <input type="tel" id="phonenumber" name="guest_phone" maxlength="14"placeholder="Phone Number"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="groupsize">
-                            <div class="group">
-                                <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size">
-                            </div>
-                        </div>
-
-                        <div class="specialreq">
-                            <div class="group">
-                                <input type="text" id="specialrequest" name="specialrequest" placeholder="Input Special Request" required>
-                            </div>
-                        </div>
-
-                        <div class="reservedate">
-                                <div class="group">
-                                    <label for="reservationdate">Appointment Date</label>
-                                
-                                    <input type="date" id="reservationdate" name="reservationdate">
-                                </div>
-                        </div>
-
-                        <div class="reservetime">
-                            <div class="group">
-                                <label for="reservedtime">Appointment Time</label>
-                                
-                                <input type="time" id="reservedtime" name="appt" min="11:00" max="22:00" required>
-                            </div>
-                        </div>
-                
-                        </div>
-                    </div>        
-            </div>
+<div class="flexcontainer">
+<div class="split">
+        <div class="text">
+            <p> 
+                Welcome to Gusteau's reservation page.
+                Here you can reserve your experience at Arizona's best
+                French Kitchen.
+                <br>
+                We invite you to join us at the heart of French cuisine, Gusteau's.
+                <br>
+                Feel free to dine with us anytime as reservations aren't required.
+            </p>
         </div>
-        <div class="footer">Footer</div>
+    </div>
+
+    <div class="split">
+        <div class="inputform">
+                
+                <div class="firstname">
+                    <div class="group">
+                        <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required>
+                    </div>
+                </div>
+
+                <div class="lastname">
+                    <div class="group">
+                        <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <div class="group">
+                        <input type="email" id="email" name="visitoremail" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <div class="pnumber">
+                    <div class="group">
+                        <input type="tel" id="phonenumber" name="guest_phone" maxlength="14"placeholder="Phone Number"
+                            required>
+                    </div>
+                </div>
+
+                <div class="groupsize">
+                    <div class="group">
+                        <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size">
+                    </div>
+                </div>
+
+                <div class="specialreq">
+                    <div class="group">
+                        <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" >
+                    </div>
+                </div>
+
+                <div class="reservedate">
+                        <div class="group">
+                            <label for="reservationdate">Appointment Date</label>
+                        
+                            <input type="date" id="reservationdate" name="reservationdate" required>
+                        </div>
+                </div>
+
+                <div class="reservetime">
+                    <div class="group">
+                        <label for="reservedtime">Appointment Time</label>
+                        
+                        <input type="time" id="reservedtime" name="appt" min="11:00" max="22:00" required>
+                    </div>
+                </div>
         
-    </div>    
+                </div>
+            </div>        
+    </div>
+</div>
+<div class="footer">Footer</div>
+
+</div>    
     <script src="gu.js"></script>
 </body>
 </html>
