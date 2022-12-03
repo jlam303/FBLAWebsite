@@ -32,9 +32,6 @@ body {
 
 }
 
-.history {
-    grid-area: history;
-}
 
 .footer {
     grid-area: footer;
@@ -64,7 +61,6 @@ p{
     grid-template-rows: auto;
     grid-template-areas:
         "aboutUs aboutUs aboutUs aboutUs aboutUs aboutUs aboutUs"
-        "history history history history history history history"
         "timeline timeline timeline timeline timeline timeline timeline"
         "awards awards awards awards awards awards awards"
         "footer footer footer footer footer footer footer"
