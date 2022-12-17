@@ -57,10 +57,9 @@ input {
         display: grid;
         gap: 5px;
         grid-template-columns: auto;
-        grid-template-rows: 3fr 1fr;
+        grid-template-rows: 3fr;
         grid-template-areas:
            "lefttext inputform"
-           "reservebutton reservebutton"
 }
 
 .footer {
@@ -105,22 +104,23 @@ input {
 }
 
 .inputform {
+    text-align: center;
     position: relative;
     top:2vh;
     right:6vh;
     display: inline;
     grid-area: inputform;
     width: 100%;
-    position: relative;
     display: grid;
     height: 50vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "b1 b2"
         "b3 b4"
         "b5 b6"
         "b7 b8"
+        "b9 b9"
     ;
 }
 
@@ -133,12 +133,57 @@ input {
     font-size:5vh;
 }
 
-.reservebutton{
-    grid-area: reservebutton;
-    justify-items: center;
-    text-align: center;
-    width: 30vh;
-    font-size: 2vh;
-    border-radius: 30px;
-    border: 2px solid black;
+.firstname {
+    grid-area: b1;
+    
 }
+
+.lastname {
+    grid-area: b2;
+    
+}
+
+.email {
+    grid-area: b3;
+    
+}
+
+.pnumber {
+    grid-area: b4;
+    
+}
+
+.groupsize {
+    grid-area: b5;
+    
+}
+
+.specialrequest {
+    grid-area: b6;
+}
+
+.reservedate {
+    grid-area: b7;
+    position: relative;
+        bottom: 2vh;
+}
+.reservetime{
+    grid-area: b8;
+    position: relative;
+        bottom: 2vh;
+}
+
+.submitbutton {
+    grid-area: b9;
+    }
+
+
+.actualSubmit{
+    padding: 1vh;
+    width: 10vh;
+}
+
+/* .specialInputs{
+   position:relative;
+   bottom: .5vh;
+} */

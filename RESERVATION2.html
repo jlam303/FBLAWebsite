@@ -40,64 +40,69 @@
                 </div>
 
         
-                <div class="inputform">
+                <form class="inputform">
 
                     <div class="firstname">
                         <div class="group">
-                            <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required>
+                            <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
                         </div>
                     </div>
             
                     <div class="lastname">
                         <div class="group">
-                            <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required>
+                            <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
                         </div>
                     </div>
             
                     <div class="email">
                         <div class="group">
-                            <input type="email" id="email" name="visitoremail" placeholder="Email" required>
+                            <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
                         </div>
                     </div>
             
                     <div class="pnumber">
                         <div class="group">
-                            <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number"
-                                required>
+                            <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
                         </div>
                     </div>
             
                     <div class="groupsize">
                         <div class="group">
-                            <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size">
+                            <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
                         </div>
                     </div>
             
                     <div class="specialreq">
                         <div class="group">
-                            <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)">
+                            <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">
                         </div>
                     </div>
             
                     <div class="reservedate">
-                        <div class="group">
-                            <label for="reservationdate">Appointment Date</label>
+                        <div class="group" class="specialInput">
+                            <label for="reservationdate" class="label">Appointment Date</label>
             
-                            <input type="date" id="reservationdate" name="reservationdate" required>
+                            <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
                         </div>
                     </div>
             
                     <div class="reservetime">
-                        <div class="group">
-                            <label for="reservedtime">Appointment Time</label>
+                        <div class="group" class="specialInput">
+                            <label for="reservedtime" class="label">Appointment Time</label>
             
-                            <input type="time" id="reservedtime" name="appt" min="11:00" max="22:00" required>
+                            <input type="time" id="reservedtime" name="appt" min="11:00" max="22:00" required id="reservetime">
 
                         </div>
                     </div>
-                </div>
-        <div class="reservebutton">Reserve Here?</div>
+
+                    <div class="submitbutton">
+                        <input type="submit" class="actualSubmit">
+                    </div>
+                </form>
+
+
     </div>   
+
 
     
         <div class="footer" id="footer">Footer</div>
