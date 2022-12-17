@@ -67,6 +67,9 @@ p{
     ;
 }
 
+.inline{
+    display: inline;
+}
 @font-face {
     font-family: "Fancy";
     src: url(Maytra.ttf);
