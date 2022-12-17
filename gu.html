@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gusteau's</title>
 </head>
-<body onLoad="slideShow()">
+<body onLoad="slideShowFor();slideShowBack()">
     <nav id="nav">
         <div id="logo"><img src="g.png" alt="Gusteau Logo" width="60px" height="60px"></div>
         <div id="home"><a href="gu.html">Home</a></div>
@@ -27,11 +27,11 @@
         <div id="main">
             <div id="gallery">
                 <div id="pic"><img src="" alt="A picture of beef stew." id="img"></div>
-                <div id="arrowUp"><button>/\</button></div>
-                <div id="top1"><img src="" alt="A picture of beef stew." id="preview1"></div>
-                <div id="top2"><img src="" alt="A picture of beef stew." id="preview2"></div>
-                <div id="top3"><img src="" alt="A picture of beef stew." id="preview3"></div>
-                <div id="arrowDown"><button>\/</button></div>
+                <div id="arrowUp"><button onclick="slideShowBack()">/\</button></div>
+                <div id="top1"><button><img class="previews" src="" alt="A picture of beef stew." id="preview1"></button></div>
+                <div id="top2"><button><img class="previews" src="" alt="A picture of beef stew." id="preview2"></button></div>
+                <div id="top3"><button><img class="previews" src="" alt="A picture of beef stew." id="preview3"></button></div>
+                <div id="arrowDown"><button onclick="slideShowFor()">\/</button></div>
             </div>
         </div>
         <div id="footer">Footer</div>
