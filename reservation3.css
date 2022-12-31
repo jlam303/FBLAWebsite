@@ -77,7 +77,7 @@ a{
 
 
 #reservationContainer{
-    /* text-align: center; */
+    text-align: left;
     grid-area: reservationContainer;
         border: 2px solid #262626;
         height: 80vh;
@@ -123,7 +123,7 @@ input {
     border: 2px solid black;
     box-sizing: border-box;
     font-size: 20px;
-    width: 100%;
+    width: 99%;
     padding: 10px;
     margin: 1px
 }
