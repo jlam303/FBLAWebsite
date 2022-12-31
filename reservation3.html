@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Jonathan Lam, Matthew Carrillo, and Matthew Andres">
+    <meta name="description" content="Website for Gusteau's Restaurant">
+    <meta property="og:image" content="imageURLhere">
+    <meta property="og:description" content="Website for Gusteau's Restaurant">
+    <meta property="og:title" content="Gusteau's Restaurant">
+    <link rel="icon" href="" type="image">
+    <link rel="stylesheet" href="reservation3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusteau's</title>
+</head>
+<body>
+    <nav id="nav">
+        <div id="logo"><img src="g.png" alt="Gusteau Logo" width="60px" height="60px"></div>
+        <div id="home"><a href="gu.html">Home</a></div>
+        <div id="about"><a href="about.html">About</a></div>
+        <div id="menu"><a href="menu.html">Menu</a></div>
+        <div id="reservation"><a href="reservation.html">Reservation</a></div>
+        <div id="contact"><a href="contact.html">Contact</a></div>
+    </nav>
+    <div id="container">
+
+    <h1 id="heading">Reservation</h1>
+
+        <div id="main">
+            <div id="reservationContainer">
+
+                    <div class="firstname">
+                        
+                            <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
+                        
+                    </div>
+            
+                    <div class="lastname">
+                        
+                            <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
+                        
+                    </div>
+            
+                    <div class="email">
+                        
+                            <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
+                        
+                    </div>
+            
+                    <div class="pnumber">
+                        
+                            <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
+                        
+                    </div>
+            
+                    <div class="groupsize">
+                        
+                            <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
+                        
+                    </div>
+            
+                    <div class="specialreq">
+                            <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">  
+                    </div>
+            
+                    <div class="reservedate">
+                            <label for="reservationdate" class="label">Appointment Date</label>
+                            <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
+                    </div>
+            
+                    <div class="reservetime">
+                            <label for="reservedtime" class="label">Appointment Time</label>
+                            <input type="time" id="reservedtime" name="appt" min="11:00" max="22:00" required id="reservetime">
+                    </div>
+
+                    <div class="submitbutton">
+                        <input type="submit" class="actualSubmit">
+                    </div>
+
+                
+            </div>
+        </div>
+
+        <div id="footer">Footer</div>
+
+    </div>    
+    <script src="gu.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+#img{
+    height: 60vmin;
+    width: 60vmin;
+    margin: auto;
+}
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #05a8aa;
+    height: 11vmin;
+}
+#nav > div > a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vmin;
+    font-family: "Min";
+}
+#logo{
+    font-size:11vmin;
+}
+#heading{
+    grid-area: heading;
+    font-size:8vmin;
+    text-align: center;
+    font-family: "Min";
+    margin: 3vh;
+}
+#main{
+    grid-area: main;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+       ". reservationContainer ."
+}
+#footer {
+    grid-area: footer;
+    background-color: #2e4057;
+}
+#container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr ;
+    grid-template-rows: .5fr 4fr 1fr;
+    grid-template-areas: 
+    "heading heading heading heading heading heading heading"
+    "main main main main main main main"
+    "footer footer footer footer footer footer footer"
+    ;
+}
+
+
+#reservationContainer{
+    grid-area: reservationContainer;
+        border: 2px solid #262626;
+        height: 80vh;
+        display: grid;
+        grid-gap: 1vh;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "b1 b2"
+        "b3 b4"
+        "b5 b6"
+        "b7 b8"
+        "submitButton submitButton"
+}
+@font-face {
+    font-family: "Min";
+    src: url(AERO_03.ttf);
+}
+
+
+#firstname {
+    grid-area: b1;
+}
+
+#lastname {
+    grid-area: b2;
+}
+
+#email {
+    grid-area: b3;
+}
+
+#pnumber {
+    grid-area: b4;
+}
+
+#groupsize {
+    grid-area: b5;
+}
+
+input {
+    border-radius: 2px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin: 1px
+}
+
+#specialrequest {
+    grid-area: b6;
+}
+
+#reservedate {
+    grid-area: b7;
+    height: 4vh;
+}
+#reservetime{
+    grid-area: b8;
+    height: 4vh;
+}
+
+.submitbutton {
+    grid-area: submitButton;
+    text-align:center;
+    }
+
+.actualSubmit{
+    width: 40%;
+}
