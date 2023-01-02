@@ -38,11 +38,6 @@ body {
 
 }
 
-
-.timeline{
-    grid-area: timeline;
-}
-
 .awards{
     grid-area: awards;
 }
@@ -52,29 +47,24 @@ p{
 }
 
 .container {
-    height: 200vh;
+    height: 100%;
     margin: auto;
     width: 50%;
     display: grid;
     gap: 5px;
-    grid-template-columns: [c1] 2fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "aboutUs aboutUs aboutUs aboutUs aboutUs aboutUs aboutUs"
-        "timeline timeline timeline timeline timeline timeline timeline"
-        "awards awards awards awards awards awards awards"
-        "footer footer footer footer footer footer footer"
+        "aboutUs"
+        "timeline "
+        "awards"
+        "footer"
     ;
 }
 
-.inline{
-    display: inline;
-}
 @font-face {
     font-family: "Fancy";
     src: url(Maytra.ttf);
 }
 
-#timelineDesc{
-    display: block;
-}
+
