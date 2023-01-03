@@ -119,13 +119,13 @@ a{
 }
 
 input {
-    border-radius: 2px;
+    border-radius: 1px;
     border: 2px solid black;
     box-sizing: border-box;
     font-size: 20px;
-    width: 99%;
+    width: 100%;
     padding: 10px;
-    margin: 1px
+    /* margin: 1px; */
 }
 
 #specialrequest {
