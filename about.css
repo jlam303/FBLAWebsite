@@ -1,6 +1,103 @@
+*{
+    box-sizing: border-box
+
+}
 body {
     margin: 0%;
     padding: 0%;
+}
+
+.mySlides {
+    display: none;
+    border: 4px solid black;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    grid-area: slideshow;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    font-size: 20px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotContainer {
+    display: flex;
+    padding: 1.5%;
+    margin: auto;
+    justify-content: space-evenly;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation for slideshow*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .nav {
@@ -11,6 +108,7 @@ body {
     top: 0px;
     background-color: aqua;
     border-bottom: solid black 2px;
+    z-index: 100;
 }
 
 .nav>div>a {
@@ -25,6 +123,7 @@ body {
 
 .aside {
     grid-area: aside;
+    justify-content: space-;
 }
 
 .aboutUs {
@@ -49,21 +148,43 @@ p{
 .starPic{
     grid-area: starPic;
     display: inline;
+    justify-self: center;
+    width: 75%;
+    height: auto;
 }
 
 .starPara{
     grid-area: starPara;
     display: inline;
+    align-self: center;
 }
 
 .newTimesPic{
     grid-area: newTimesPic;
     display: inline;
+    justify-self: center;
+    width: 75%;
+    height: auto;
 }
 
 .newTimesPara{
     grid-area: newTimesPara;
     display: inline;
+    align-self: center;
+}
+
+.top100Para {
+    grid-area: top100Para;
+    display: inline;
+    align-self: center;
+}
+
+.top100Pic {
+    grid-area: top100Pic;
+    display: inline;
+    justify-self: center;
+    width: 75%;
+    height: auto;
 }
 
 .awards{
@@ -74,7 +195,8 @@ p{
     grid-template-areas: 
     'awardsTitle awardsTitle'
     'starPara starPic'
-    'newTimesPic newTimesPara';
+    'newTimesPic newTimesPara'
+    'top100Para top100Pic';
 }
 
 .newTimesPara{
@@ -84,14 +206,14 @@ p{
 .container {
     height: 100%;
     margin: auto;
-    width: 50%;
+    width: 75%;
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "aboutUs"
-        "timeline"
+        "slideshow"
         "awards"
         "footer"
     ;
