@@ -15,7 +15,7 @@
 </head>
 <body onLoad="slideShowFor();slideShowBack()">
     <nav id="nav">
-        <div id="logo"><img src="g.png" alt="Gusteau Logo" width="60px" height="60px"></div>
+        <div><img src="g.png" alt="Gusteau Logo" id="logo"></div>
         <div id="home"><a href="gu.html">Home</a></div>
         <div id="about"><a href="about.html">About</a></div>
         <div id="menu"><a href="menu.html">Menu</a></div>
@@ -23,18 +23,22 @@
         <div id="contact"><a href="contact.html">Contact</a></div>
     </nav>
     <div id="container">
-        <div id="aside">Todays Specials</div>
+        <div id="aside">
+            <div id="special1"><button class="redirect"><p>3-7 PM - 50% Off Appetizers and Drinks</p></button></div>
+            <div id="special2"><button class="redirect"><p>20% Off New Special Dish</p></button></div>
+        </div>
         <div id="main">
             <div id="gallery">
                 <div id="pic"><img src="" alt="A picture of beef stew." id="img"></div>
-                <div id="arrowUp"><button onclick="slideShowBack()">/\</button></div>
-                <div id="top1"><button><img class="previews" src="" alt="A picture of beef stew." id="preview1"></button></div>
-                <div id="top2"><button><img class="previews" src="" alt="A picture of beef stew." id="preview2"></button></div>
-                <div id="top3"><button><img class="previews" src="" alt="A picture of beef stew." id="preview3"></button></div>
-                <div id="arrowDown"><button onclick="slideShowFor()">\/</button></div>
+                <div id="top1"><button onclick="slideShowBack()"></button></div>
+                <div id="top2"><button></button></div>
+                <div id="top3"><button onclick="slideShowFor()"></button></div>
             </div>
         </div>
-        <div id="footer">Footer</div>
+        <div id="footer">Lorem ipsum dolor sit amet, consectetur adipisi
+            cing elit. Eius a animi sequi dignissimos placeat laborum explicabo magnam eligendi at. Quia quaerat praese
+            ntium laboriosam minima magnam rem fuga incidunt similique animi! Quos sequi nostrum neque debitis! Re
+            iciendis ipsam consectetur, animi quos a reprehenderit temporibus architecto. Earum, cumque tempore. Facere, illo delectus.</div>
     </div>    
     <script src="gu.js"></script>
 </body>

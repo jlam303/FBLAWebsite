@@ -3,61 +3,64 @@ body{
     padding: 0%;
     background-color: white;
 }
-#img{
-    height: 60vmin;
-    width: 60vmin;
-    margin: auto;
-}
 #nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: sticky;
     top: 0px;
-    background-color: #05a8aa;
+    background-color: white;
     height: 11vmin;
+    z-index: 100;
+    border-bottom: 1vmin solid #05a8aa;
 }
 #nav > div > a{
     text-decoration: none;
-    color: white;
+    color: #05a8aa;
     font-size: 3vmin;
     font-family: "Min";
+
 }
 #logo{
-    font-size:11vmin;
+    height: 8vmin;
+    width: 8vmin;
 }
 #aside{
     grid-area: aside;
+    background-color: white;
 }
 #main{
     grid-area: main;
-    margin: auto;
+    background-color: white;
 }
 #footer {
     grid-area: footer;
-    background-color: #2e4057;
+    background-color: #05a8aa;
+    z-index: 200;
 }
 #container{
     display: grid;
-    gap: 10px;
     grid-template-columns: [c1] 2fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr [c8];
     grid-template-rows: 4fr 1fr;
     grid-template-areas: 
-    "aside main main main main main main"
+    "aside aside main main main main main"
     "footer footer footer footer footer footer footer"
     ;
+    background-color: black;
 }
 #gallery{
+    margin-bottom: 4vmin;
+    margin-top: 4.2vmin;
     display: grid;
-    grid-template-columns: 20vmin 20vmin 20vmin 20vmin;
-    grid-template-rows: 16vmin 16vmin 16vmin 16vmin 16vmin;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
     grid-template-areas:
-    "pic pic pic aUp"
-    "pic pic pic top1"
-    "pic pic pic top2"
-    "pic pic pic top3"
-    "pic pic pic aDown"
+    "pic top1"
+    "pic top2"
+    "pic top3"
     ;
+    background-color: white;
+    
 }
 
 #gallery > div{
@@ -75,18 +78,63 @@ body{
 #top3 {
     grid-area: top3;
 }
-#arrowUp {
-    grid-area: aUp;
-}
-#arrowDown {
-    grid-area: aDown;
-}
 .previews{
-    width: 6vmin;
-    height: 6vmin;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 .5vmin #05a8aa;
+    border-radius: 20%;
+    z-index: -1;
 }
-#preview2 {
-    
+.previews:hover{
+    opacity: .6;
+}
+#preview2{
+    box-shadow: 0 0 0 .5vmin #05a8aa;
+    opacity: 1;
+}
+#gallery > div > button{
+    border: none;
+    background-color: transparent;
+    padding: 0%;
+    width: 50%;
+    height: 50%;
+    transform: translateX(40%);
+    z-index: -1;
+}
+#img{
+    height: 40vw;
+    width: 40vw;
+    padding: auto;
+    box-shadow: 0 0 0 1vmin #05a8aa;
+    border-radius: 20%;
+}
+#special1{
+    height: 50%;
+    width:  100%;
+    background-image: url(e.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#special2{
+    height: 50%;
+    width:  100%;
+    background-image: url(y.png);
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
+}
+.redirect{
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    border: none;
+    background-color: rgba(0, 0, 0, .6);
+}
+.redirect > p{
+    color: white;
+    font-size: 5vmin;
+    font-family: "Min";
 }
 @font-face {
     font-family: "Min";
