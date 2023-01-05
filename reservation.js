@@ -1,7 +1,7 @@
 const form = document.querySelector('#myForm');
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); // prevent the form from submitting
+  event.preventDefault(); // prevents the form from submitting
 
   const firstName = document.querySelector('#firstname').value;
   const lastName = document.querySelector('#lastname').value;
