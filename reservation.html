@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="author" content="Jonathan Lam, Matthew Carrillo, and Matthew Andres">
     <meta name="description" content="Website for Gusteau's Restaurant">
@@ -14,99 +13,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gusteau's</title>
 </head>
-
-<body id="bodyID">
-    <nav class="nav">
-        <div class="logo"><img src="g.png" alt="Gusteau Logo" width="100px" height="100px"></div>
-        <div class="about"><a href="about.html">About</a></div>
-        <div class="menu"><a href="menu.html">Menu</a></div>
-        <div class="reservation"><a href="reservation.html">Reservation</a></div>
-        <div class="gallery"><a href="gallery.html">Gallery</a></div>
-        <div class="contact"><a href="#footer">Contact</a></div>
+<body>
+    <nav id="nav">
+        <div id="logo"><img src="g.png" alt="Gusteau Logo" width="60px" height="60px"></div>
+        <div id="home"><a href="gu.html">Home</a></div>
+        <div id="about"><a href="about.html">About</a></div>
+        <div id="menu"><a href="menu.html">Menu</a></div>
+        <div id="reservation"><a href="reservation.html">Reservation</a></div>
+        <div id="contact"><a href="contact.html">Contact</a></div>
     </nav>
-    <div class="container">
-        <div class="main">
-            <h1 class="title">Reservations</h1>
+    <div id="container">
 
-<div class="flexcontainer">
-<div class="split">
-        <div class="text">
-            <p> 
-                Welcome to Gusteau's reservation page.
-                Here you can reserve your experience at Arizona's best
-                French Kitchen.
-                <br>
-                We invite you to join us at the heart of French cuisine, Gusteau's.
-                <br>
-                Feel free to dine with us anytime as reservations aren't required.
-            </p>
+        <div id="heading">
+            <h1>Reserve A Table</h1>
+            <p id="noteheading">Note: Reservations aren't required but are greatly appreciated.</p>    
         </div>
-    </div>
 
-    <div class="split">
-        <div class="inputform">
+            <div id="main">
+                <form id="reservationContainer">
+
+                        <div class="empty"> </div>
+
+                        <div class="firstname">
+
+                                <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
+                            
+                        </div>
                 
-                            <div class="firstname">
-                                <div class="group">
-                                    <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required>
-                                </div>
-                            </div>
+                        <div class="lastname">
 
-                            <div class="lastname">
-                                <div class="group">
-                                    <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required>
-                                </div>
-                            </div>
+                                <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
+                            
+                        </div>
+                
+                        <div class="email">
+                            
+                                <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
+                            
+                        </div>
+                
+                        <div class="pnumber">
+                            
+                                <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
+                            
+                        </div>
+                
+                        <div class="groupsize">
+                            
+                                <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
+                            
+                        </div>
+                
+                        <div class="specialreq">
+                                <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">  
+                        </div>
+                
+                        <div class="reservedate">
+                                <label for="reservationdate" class="label">Reservation Date | Monday to Saturday</label>
+                                <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
+                        </div>
+                
+                        <div class="reservetime">
+                                <label for="reservedtime" class="label">Reservation Time | 9 AM- 9 PM </label>
+                                <input type="time" id="reservedtime" name="appt" min="9:00" max="21:00" required id="reservetime" value="12:00">
+                        </div>
 
-                            <div class="email">
-                                <div class="group">
-                                    <input type="email" id="email" name="visitoremail" placeholder="Email" required>
-                                </div>
-                            </div>
+                        <div class="submitbutton">
+                            <input type="submit" class="actualSubmit" value="Reserve">
+                        </div>
 
-                            <div class="pnumber">
-                                <div class="group">
-                                    <input type="tel" id="phonenumber" name="guest_phone" maxlength="14"placeholder="Phone Number"
-                                        required>
-                                </div>
-                            </div>
-
-                            <div class="groupsize">
-                                <div class="group">
-                                    <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size">
-                                </div>
-                            </div>
-
-                            <div class="specialreq">
-                                <div class="group">
-                                    <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" >
-                                </div>
-                            </div>
-
-                            <div class="reservedate">
-                                    <div class="group">
-                                        <label for="reservationdate">Appointment Date</label>
-                                    
-                                        <input type="date" id="reservationdate" name="reservationdate" required>
-                                    </div>
-                            </div>
-
-                            <div class="reservetime">
-                                <div class="group">
-                                    <label for="reservedtime">Appointment Time</label>
-                                    
-                                    <input type="time" id="reservedtime" name="appt" min="11:00" max="22:00" required>
-                                </div>
-
-                </div>
+                    
+                    </form>
             </div>
 
-        </div>        
-    </div>
+            <div id="footer">
+                    <p>Schedule: 9 AM - 9 PM Everyday</p>
+                    
+                    <span>Contact Us:
+                        <a href="mailto:Gusteaus@gmail.com">Gusteaus@gmail.com</a><a href="tel:+4733378901"> or 47 333 78 901</a></span>
+                        <br>
+                        <p>Created by Matthew Andres, Matthew Carrillo, and Jonathan Lam</p>
+                    <span>
+                        <a href="https://twitter.com/"><img src="twitter.png" alt="Our Twitter Link" width="40px" height="40px"></a>
+                        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Our Instagram Link" width="40px" height="40px">
+                        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Our Facebook Link" width="40px" height="40px">
+                    </span>
+            </div>
 
-<div class="footer" id="footer">Footer</div>
-</div>
-
-    <script src="gu.js"></script>
+    </div>    
+    <script src="reservation.js"></script>
 </body>
 </html>
