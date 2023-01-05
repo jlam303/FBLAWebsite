@@ -32,6 +32,7 @@ body{
     text-align: center;
     font-family: "Min";
     margin: 3vh;
+    padding-bottom: 2vh;
 }
 #main{
     grid-area: main;
@@ -65,7 +66,6 @@ a{
 }
 #container{
     display: grid;
-    gap: 10px;
     grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6] 1fr [c7] 1fr ;
     grid-template-rows: .25fr 3fr 1fr;
     grid-template-areas: 
@@ -77,26 +77,34 @@ a{
 
 
 #reservationContainer{
+    
     text-align: left;
     grid-area: reservationContainer;
-        border: 2px solid #262626;
+        border: 4px solid #262626;
         height: 80vh;
         display: grid;
         grid-gap: 1vh;
         grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-rows: .2fr 1fr 1fr 1fr 1fr .8fr;
         grid-template-areas:
+
+        "b0 b0"
         "b1 b2"
         "b3 b4"
         "b5 b6"
         "b7 b8"
         "submitButton submitButton"
+
+
 }
 @font-face {
     font-family: "Min";
     src: url(AERO_03.ttf);
 }
 
+.empty {
+    grid-area: b0;
+}
 
 #firstname {
     grid-area: b1;
@@ -120,12 +128,11 @@ a{
 
 input {
     border-radius: 1px;
-    border: 2px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
     font-size: 20px;
     width: 100%;
     padding: 10px;
-    /* margin: 1px; */
 }
 
 #specialrequest {
@@ -148,4 +155,6 @@ input {
 
 .actualSubmit{
     width: 40%;
+    background-color: #05a8aa;
+    color: whitesmoke;
 }

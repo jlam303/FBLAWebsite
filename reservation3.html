@@ -24,79 +24,81 @@
     </nav>
     <div id="container">
 
-    <div id="heading">
-        <h1>Reservations</h1>
-        <p id="noteheading">Note: Reservations aren't required but are greatly appreciated.</p>    
-    </div>
+        <div id="heading">
+            <h1>Reserve A Table</h1>
+            <p id="noteheading">Note: Reservations aren't required but are greatly appreciated.</p>    
+        </div>
 
-        <div id="main">
-            <form id="reservationContainer">
+            <div id="main">
+                <form id="reservationContainer">
 
-                    <div class="firstname">
-                        <br>
-                            <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
-                        
-                    </div>
-            
-                    <div class="lastname">
-                        <br>
-                            <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
-                        
-                    </div>
-            
-                    <div class="email">
-                        
-                            <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
-                        
-                    </div>
-            
-                    <div class="pnumber">
-                        
-                            <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
-                        
-                    </div>
-            
-                    <div class="groupsize">
-                        
-                            <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
-                        
-                    </div>
-            
-                    <div class="specialreq">
-                            <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">  
-                    </div>
-            
-                    <div class="reservedate">
-                            <label for="reservationdate" class="label">Reservation Date | Monday to Saturday</label>
-                            <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
-                    </div>
-            
-                    <div class="reservetime">
-                            <label for="reservedtime" class="label">Reservation Time | 9 AM- 9 PM </label>
-                            <input type="time" id="reservedtime" name="appt" min="9:00" max="21:00" required id="reservetime" value="12:00">
-                    </div>
+                        <div class="empty"> </div>
 
-                    <div class="submitbutton">
-                        <input type="submit" class="actualSubmit">
-                    </div>
+                        <div class="firstname">
 
+                                <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
+                            
+                        </div>
                 
+                        <div class="lastname">
+
+                                <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
+                            
+                        </div>
+                
+                        <div class="email">
+                            
+                                <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
+                            
+                        </div>
+                
+                        <div class="pnumber">
+                            
+                                <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
+                            
+                        </div>
+                
+                        <div class="groupsize">
+                            
+                                <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
+                            
+                        </div>
+                
+                        <div class="specialreq">
+                                <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">  
+                        </div>
+                
+                        <div class="reservedate">
+                                <label for="reservationdate" class="label">Reservation Date | Monday to Saturday</label>
+                                <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
+                        </div>
+                
+                        <div class="reservetime">
+                                <label for="reservedtime" class="label">Reservation Time | 9 AM- 9 PM </label>
+                                <input type="time" id="reservedtime" name="appt" min="9:00" max="21:00" required id="reservetime" value="12:00">
+                        </div>
+
+                        <div class="submitbutton">
+                            <input type="submit" class="actualSubmit" value="Reserve">
+                        </div>
+
+                    
+                    </form>
             </div>
-        </div>
 
-        <div id="footer">
-                <p>Schedule: 9 AM - 9 PM Everyday</p>
-                
-                <span>Contact Us:
-                    <a href="mailto:Gusteaus@gmail.com">Gusteaus@gmail.com</a><a href="tel:+4733378901"> or 47 333 78 901</a></span>
-                    <br>
-                    <p>Created by Matthew Andres, Matthew Carrillo, and Jonathan Lam</p>
-                <span>
-                    <a href="https://twitter.com/"><img src="twitter.png" alt="Our Twitter Link" width="40px" height="40px"></a>
-                    <a href="https://www.instagram.com/"><img src="instagram.png" alt="Our Instagram Link" width="40px" height="40px">
-                    <a href="https://www.facebook.com/"><img src="facebook.png" alt="Our Facebook Link" width="40px" height="40px">
-                </span>
-        </div>
+            <div id="footer">
+                    <p>Schedule: 9 AM - 9 PM Everyday</p>
+                    
+                    <span>Contact Us:
+                        <a href="mailto:Gusteaus@gmail.com">Gusteaus@gmail.com</a><a href="tel:+4733378901"> or 47 333 78 901</a></span>
+                        <br>
+                        <p>Created by Matthew Andres, Matthew Carrillo, and Jonathan Lam</p>
+                    <span>
+                        <a href="https://twitter.com/"><img src="twitter.png" alt="Our Twitter Link" width="40px" height="40px"></a>
+                        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Our Instagram Link" width="40px" height="40px">
+                        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Our Facebook Link" width="40px" height="40px">
+                    </span>
+            </div>
 
     </div>    
     <script src="gu.js"></script>
