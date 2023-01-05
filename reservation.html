@@ -22,69 +22,68 @@
         <div id="reservation"><a href="reservation.html">Reservation</a></div>
         <div id="contact"><a href="contact.html">Contact</a></div>
     </nav>
-    <div id="container">
+<div id="container">
 
-        <div id="heading">
-            <h1>Reserve A Table</h1>
-            <p id="noteheading">Note: Reservations aren't required but are greatly appreciated.</p>    
-        </div>
+<div id="heading">
+        <h1>Reserve A Table</h1>
+        <p id="noteheading">Note: Reservations aren't required but are greatly appreciated.</p>    
+</div>
 
-            <div id="main">
-                <form id="reservationContainer">
+<div id="main">
 
-                        <div class="empty"> </div>
+        <form class="reservationContainer" id="myForm">
 
-                        <div class="firstname">
+                <div class="empty"></div>
+                <div class="firstname">
 
-                                <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
-                            
-                        </div>
-                
-                        <div class="lastname">
+                        <input type="text" id="firstname" name="visitorfirstname" placeholder="First Name" required id="firstname">
+                        
+                </div>
+        
+                <div class="lastname">
 
-                                <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
-                            
-                        </div>
-                
-                        <div class="email">
-                            
-                                <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
-                            
-                        </div>
-                
-                        <div class="pnumber">
-                            
-                                <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
-                            
-                        </div>
-                
-                        <div class="groupsize">
-                            
-                                <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
-                            
-                        </div>
-                
-                        <div class="specialreq">
-                                <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">  
-                        </div>
-                
-                        <div class="reservedate">
-                                <label for="reservationdate" class="label">Reservation Date | Monday to Saturday</label>
-                                <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
-                        </div>
-                
-                        <div class="reservetime">
-                                <label for="reservedtime" class="label">Reservation Time | 9 AM- 9 PM </label>
-                                <input type="time" id="reservedtime" name="appt" min="9:00" max="21:00" required id="reservetime" value="12:00">
-                        </div>
+                        <input type="text" id="lastname" name="visitorlastname" placeholder="Last Name" required id="lastname">
+                        
+                </div>
+        
+                <div class="email">
+                        
+                        <input type="email" id="email" name="visitoremail" placeholder="Email" required id="email">
+                        
+                </div>
+        
+                <div class="pnumber">
+                        
+                        <input type="tel" id="phonenumber" name="guest_phone" maxlength="14" placeholder="Phone Number" required id="pnumber">
+                        
+                </div>
+        
+                <div class="groupsize">
+                        
+                        <input type="number" id="size" name="size" min="1" max="10" placeholder="Group Size" id="groupsize">
+                        
+                </div>
+        
+                <div class="specialreq">
+                        <input type="text" id="specialrequest" name="specialrequest" placeholder="Special Request (Optional)" id="specialreq">  
+                </div>
+        
+                <div class="reservedate">
+                        <label for="reservationdate" class="label">Reservation Date | Monday to Saturday</label>
+                        <input type="date" id="reservationdate" name="reservationdate" required id="reservationdate">
+                </div>
+        
+                <div class="reservetime">
+                        <label for="reservedtime" class="label">Reservation Time | 9 AM- 9 PM </label>
+                        <input type="time" id="reservedtime" name="appt" min="9:00" max="21:00" required id="reservetime" value="12:00">
+                </div>
 
-                        <div class="submitbutton">
-                            <input type="submit" class="actualSubmit" value="Reserve">
-                        </div>
-
-                    
-                    </form>
-            </div>
+                <div class="submitbutton">
+                        <input type="submit" class="actualSubmit" value="Reserve">
+                </div>
+  
+        </form>
+ </div>
 
             <div id="footer">
                     <p>Schedule: 9 AM - 9 PM Everyday</p>
@@ -100,7 +99,7 @@
                     </span>
             </div>
 
-    </div>    
+        </div>    
     <script src="reservation.js"></script>
 </body>
 </html>
