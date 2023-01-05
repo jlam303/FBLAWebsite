@@ -13,9 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gusteau's</title>
 </head>
-<body onLoad="slideShowFor();slideShowBack()">
+<body onLoad="slideChange()">
     <nav id="nav">
-        <div><img src="g.png" alt="Gusteau Logo" id="logo"></div>
+        <div><img src="./images/g.png" alt="Gusteau Logo" id="logo"></div>
         <div id="home"><a href="gu.html">Home</a></div>
         <div id="about"><a href="about.html">About</a></div>
         <div id="menu"><a href="menu.html">Menu</a></div>
@@ -24,15 +24,26 @@
     </nav>
     <div id="container">
         <div id="aside">
-            <div id="special1"><button class="redirect"><p>3-7 PM - 50% Off Appetizers and Drinks</p></button></div>
-            <div id="special2"><button class="redirect"><p>20% Off New Special Dish</p></button></div>
+            <div id="special1"><button class="redirect"><a >3-7 PM - 50% Off Appetizers and Drinks</a></button></div>
+            <div id="special2"><button class="redirect"><a >20% Off Special Dish - Ratatouille</a></button></div>
         </div>
         <div id="main">
-            <div id="gallery">
-                <div id="pic"><img src="" alt="A picture of beef stew." id="img"></div>
-                <div id="top1"><button onclick="slideShowBack()"></button></div>
-                <div id="top2"><button></button></div>
-                <div id="top3"><button onclick="slideShowFor()"></button></div>
+            <div id="slides">
+                <img src="./images/soup.jpg" alt="A picture of French onion soup" class="img" id="img1">
+                <img src="./images/beef.jpg" alt="A picture of beef stew." class="img" id="img2">
+                <img src="./images/steak.jpg" alt="A picture of steak tartare." class="img" id="img3">
+                <img src="./images/duck.jpg" alt="A picture of beef stew." class="img" id="img4">
+                <img src="./images/Bouillabasse.png" alt="A picture of beef stew." class="img" id="img5">
+                <img src="./images/tartiflette.jpeg" alt="A picture of beef stew." class="img" id="img6">
+                <div id="slideShow"><a href="menu.html" id="slideCaption">Food</a></div>
+                <button class="sButtons" id="up" onclick="slideShowBack()">	
+                    <img src="./images/icons8-collapse-arrow-50.png" alt="">
+                </button>
+                <button class="sButtons" id="play" onclick="slidePlay()">	
+                    <img src="./images/icons8-pause-50.png" alt="" id="pause"></button>
+                <button class="sButtons" id="down" onclick="slideShowFor()">
+                    <img src="./images/icons8-expand-arrow-50.png" alt="">
+                </button>
             </div>
         </div>
         <div id="footer">Lorem ipsum dolor sit amet, consectetur adipisi
