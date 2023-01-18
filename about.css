@@ -1,273 +1,55 @@
-*{
-    box-sizing: border-box
-
-}
-body {
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
-}
-
-.mySlides {
-    display: none;
-    border: 4px solid black;
-}
-
-img {
-    vertical-align: middle;
-}
-
-.timelineTitle{
-    grid-area: timelineTitle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    grid-area: slideshow;
-    position: relative;
-    margin: auto;
+body{
     width: 100%;
-    z-index: 1;
-
+    height: 100%;
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    font-size: 20px;
-    padding: 8px 12px;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 4px solid black;
-}
-
-.size{
-    width: 100%;
-    height: 65vh;
-    object-fit: cover;
-    object-position: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.dotContainer {
-    display: flex;
-    padding: 1.5%;
-    margin: auto;
-    justify-content: space-evenly;
-    border-bottom: 4px solid black;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
-}
-
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation for slideshow*/
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    background-color: aqua;
-    border-bottom: solid black 2px;
-    z-index: 100;
-}
-
-.nav>div>a {
+a{
     text-decoration: none;
     color: black;
-    font-size: 5vh;
 }
 
-.logo {
-    font-size: 15vh;
+h1{
+    text-align: center;
 }
 
-.aside {
-    grid-area: aside;
-    justify-content: space-;
-}
-
-.aboutUs {
-    grid-area: aboutUs;
+.story{
+    grid-area: story;
+    justify-self: right;
 
 }
 
-
-.footer {
-    grid-area: footer;
-
+.values{
+    grid-area: values;
 }
 
-.awards{
-    grid-area: awards;
-}
- 
-p{
-    font-size: x-large;
+.leader{
+    grid-area: leader;
+    justify-self: right;
 }
 
-.starPic{
-    grid-area: starPic;
-    display: inline;
-    justify-self: center;
-    width: 75%;
-    height: auto;
+.aboutPics{
+    width: 600px;
+    height: 400px;
 }
 
-.starPara{
-    grid-area: starPara;
-    display: inline;
-    align-self: center;
+.news{
+    grid-area: news;
 }
 
-.newTimesPic{
-    grid-area: newTimesPic;
-    display: inline;
-    justify-self: center;
-    width: 75%;
-    height: auto;
-}
-
-.newTimesPara{
-    grid-area: newTimesPara;
-    display: inline;
-    align-self: center;
-}
-
-.top100Para {
-    grid-area: top100Para;
-    display: inline;
-    align-self: center;
-}
-
-.top100Pic {
-    grid-area: top100Pic;
-    display: inline;
-    justify-self: center;
-    width: 75%;
-    height: auto;
-}
-
-.awards{
-    grid-area: awards;
+.container{
     display: grid;
+    gap: 2%;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: 
-    'awardsTitle awardsTitle'
-    'starPara starPic'
-    'newTimesPic newTimesPara'
-    'top100Para top100Pic';
-}
-
-.newTimesPara{
-    grid-area: newTimesPara;
-}
-
-.container {
-    height: 100%;
-    margin: auto;
-    width: 70%;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas:
-        "aboutUs"
-        "timelineTitle"
-        "slideshow"
-        "awards"
-        "footer"
-    ;
+    grid-template-areas: 
+    'story values'
+    'leader news';
 }
 
-.hidden{
-    opacity: 0;
-    transition: all 1.25s;
-    filter: blur(5px);
+button{
+    background-color: #FF3600;
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
+a{
+    color: white;
 }
-
-.hiddenStarPic{
-    opacity: 0;
-    transition: all 1.85s;
-    transform: translateX(100%);
-}
-
-.showStarPic{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.hiddenBestPic {
-    opacity: 0;
-    transition: all 2s;
-    transform: translateX(-100%);
-}
-
-.showBestPic {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-@font-face {
-    font-family: "Fancy";
-    src: url(Maytra.ttf);
-}
-
-
