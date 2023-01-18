@@ -1,0 +1,38 @@
+html{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #eaeaea;
+}
+nav{
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: .25vw solid rgba(0, 0, 0, .2);
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: inter; 
+    
+}
+nav > a{
+    color: #ff3600;
+    padding-left: 5vw;
+    text-decoration: none;
+}
+#logo{
+    padding-left: 2vw;
+    width: 2vw;
+    height: 2vw;
+}
+#cart{
+    padding-left: 60vw;
+}
+@font-face {
+    font-family: "inter";
+    src: url(Inter-Bold.ttf);
+}
