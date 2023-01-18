@@ -1,0 +1,96 @@
+#container{
+    display: grid;
+    text-align: center;
+    height: 120vh;
+    grid-area: main;
+    margin: 2% 10% 10%;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5%;
+    grid-template-areas: 
+    "row1"
+    "row2"
+    "row3";
+}
+
+.row1{
+    grid-area: row1;
+    display: grid;
+    grid-template-columns: 3fr 1.45fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image1 content1";
+    border: 2px solid black;
+    /* border-radius: 15%; */
+    border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+}
+
+.img1{
+    grid-area: image1;
+    background-color: orangered;
+    border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
+    /* background-image: url("chicken.jpeg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%; */
+}
+
+
+.content1{
+    grid-area: content1;
+}
+
+
+.row2{
+    grid-area: row2;
+    display: grid;
+    grid-template-columns: 1.45fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "content2 image2";
+    border: 2px solid black;
+    border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+}
+
+.img2{
+    grid-area: image2;
+    background-color: orangered;
+    border-radius:0% 2% 2% 0% / 0% 9% 9% 0% ;
+
+}
+
+
+.content2{
+    grid-area: content2;
+}
+
+.row3{
+    grid-area: row3;
+    display: grid;
+    grid-template-columns: 3fr 1.45fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image3 content3";
+    border: 2px solid black;
+    border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+}
+
+.img3{
+    grid-area: image3;
+    background-color: orangered;
+    border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
+
+}
+
+
+.content3{
+    grid-area: content3;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: orangered;
+    border: 2px orangered;
+    padding: 2%;
+}
+
