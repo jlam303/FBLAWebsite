@@ -13,7 +13,7 @@ nav{
     position: fixed;
     left: 0;
     top: 0;
-    border-bottom: .25vw solid rgba(0, 0, 0, .2);
+    border-bottom: .3vw solid rgba(0, 0, 0, .2);
     align-items: center;
     font-size: 1.5vw;
     font-family: inter; 
@@ -26,11 +26,16 @@ nav > a{
 }
 #logo{
     padding-left: 2vw;
-    width: 2vw;
-    height: 2vw;
+    width: 3.5vw;
+    height: 3.5vw;
 }
 #cart{
-    padding-left: 60vw;
+    position: relative;
+    left: 55%;
+    transform: translateX(-50%);
+    padding: 1vw 2vw;
+    border: #ff3600 solid .5vw;
+    border-radius: 3vw;
 }
 @font-face {
     font-family: "inter";
