@@ -1,7 +1,18 @@
-#container{
+/* #container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "heading"
+    "containermain"
+    "footer";
+} */
+#containermain{
+    /* position:relative;
+    top:12vh; */
     display: grid;
     text-align: center;
-    height: 120vh;
+    height: 130vh;
     grid-area: main;
     margin: 2% 10% 10%;
     grid-template-columns: auto;
@@ -20,27 +31,40 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "image1 content1";
-    border: 2px solid black;
-    /* border-radius: 15%; */
+    border-bottom: .3vw solid rgba(0, 0, 0, .5);
     border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
 }
 
 .img1{
     grid-area: image1;
-    background-color: orangered;
+    background-color: #ff3600;
     border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
-    /* background-image: url("chicken.jpeg");
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%; */
+    /* background: url('fchicken.png') no-repeat;*/
+    /* background-size: 100%; 
+    background-image: url("fchicken.png");
+     */
+  /* position: relative;
+  background-position: 5vh; */
+  /* background-attachment: fixed; */
+  /* background-size: 40%;  */
+
 }
 
+#image1{
+    width: 70%;
+  object-fit: cover;
+object-position: center;
+}
 
 .content1{
     grid-area: content1;
+    background-color: white;
+    border-radius:0% 7% 7% 0% / 0% 8% 8% 0% ;
 }
 
-
+h2{
+    font-family: "inter";
+}
 .row2{
     grid-area: row2;
     display: grid;
@@ -48,13 +72,13 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "content2 image2";
-    border: 2px solid black;
+    border-bottom: .3vw solid rgba(0, 0, 0, .5);
     border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
 }
 
 .img2{
     grid-area: image2;
-    background-color: orangered;
+    background-color: #ff3600;
     border-radius:0% 2% 2% 0% / 0% 9% 9% 0% ;
 
 }
@@ -62,6 +86,8 @@
 
 .content2{
     grid-area: content2;
+    background-color: white;
+    border-radius:7% 0% 0% 7% / 8% 0% 0% 8%  ;
 }
 
 .row3{
@@ -71,26 +97,115 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "image3 content3";
-    border: 2px solid black;
+    border-bottom: .3vw solid rgba(0, 0, 0, .5);
     border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
 }
 
 .img3{
     grid-area: image3;
-    background-color: orangered;
+    background-color: #ff3600;
     border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
-
 }
 
 
 .content3{
     grid-area: content3;
+    background-color: white;
+    border-radius:0% 7% 7% 0% / 0% 8% 8% 0% ;
+
 }
 
-a, a:visited, a:hover{
+.btn, .btn:visited{
     text-decoration: none;
-    color: orangered;
-    border: 2px orangered;
-    padding: 2%;
+    color: #ff3600;
+    border: 3px solid #ff3600;
+    border-radius: 999vw;
+    padding: 2% 8% 2% 8%;
+    font-size: 4vmin;
+    position: relative;
+    top: 5%;
 }
 
+.btn:hover{
+ transition: .5seconds;
+ background-color: #ff3600;
+ color: white;
+}
+
+
+
+
+html{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #eaeaea;
+    margin: 0%;
+}
+nav{
+    font-family: "inter";
+    z-index: 1000;
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: .3vw solid rgba(0, 0, 0, .2);
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: inter; 
+
+}
+nav > a{
+    color: black;
+    padding-left: 5vw;
+    text-decoration: none;
+    transition: .3s;
+}
+nav > a:hover{
+    color: #ff3600;
+    text-decoration: underline .2vw;
+}
+#logo{
+    padding-left: 2vw;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+#cart{
+    color: #ff3600;
+    font-size: 1vw;
+    position: relative;
+    left: 48%;
+    transform: translateX(-50%);
+    padding: .5vw 1vw;
+    border: #ff3600 solid .5vw;
+    border-radius: 15% / 45%;
+    transition: .5s;
+}
+#cart:hover{
+    color: white;
+    background-color: #ff3600; 
+    text-decoration: none;
+}
+#menu{
+    text-decoration: underline .2vw;
+    color:#ff3600;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(Inter-Bold.ttf);
+}
+
+#heading{
+    grid-area: heading;
+}
+
+#nav2{
+    height: 12vh;
+    border-bottom: .3vw solid rgba(0, 0, 0, 0);
+    margin: 0;
+}
