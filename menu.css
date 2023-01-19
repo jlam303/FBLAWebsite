@@ -4,6 +4,7 @@ html{
 }
 body{
     background-color: #eaeaea;
+    margin: 0%;
 }
 nav{
     display: flex;
@@ -16,13 +17,22 @@ nav{
     border-bottom: .3vw solid rgba(0, 0, 0, .2);
     align-items: center;
     font-size: 1.5vw;
-    font-family: inter; 
-    
+    font-family: "inter"; 
+}
+#nav2{
+    height: 12vh;
+    border-bottom: .3vw solid rgba(0, 0, 0, 0);
+    margin: 0;
 }
 nav > a{
-    color: #ff3600;
+    color: black;
     padding-left: 5vw;
     text-decoration: none;
+    transition: .3s;
+}
+nav > a:hover{
+    color: #ff3600;
+    text-decoration: underline .2vw;
 }
 #logo{
     padding-left: 2vw;
@@ -30,14 +40,88 @@ nav > a{
     height: 3.5vw;
 }
 #cart{
+    color: #ff3600;
+    font-size: 1vw;
     position: relative;
-    left: 55%;
+    left: 48%;
     transform: translateX(-50%);
-    padding: 1vw 2vw;
+    padding: .5vw 1vw;
     border: #ff3600 solid .5vw;
-    border-radius: 3vw;
+    border-radius: 15% / 45%;
+    transition: .5s;
+}
+#cart:hover{
+    color: white;
+    background-color: #ff3600; 
+    text-decoration: none;
+}
+#menu{
+    text-decoration: underline .2vw;
+    color:#ff3600;
+}
+.mT{
+    height: calc(17vw * 3 / 4);
+    width: 17vw;
+    background-color: #ff3600;
+    border-radius: 10% 10% 0% 0% / 13.34% 13.34% 0% 0%  ;
+}
+.mB{
+    height: calc(17vw/4);
+    width: 17vw;
+    background-color: white;
+    border-radius: 0% 0% 10% 10% / 0% 0% 40% 40% ;
+    text-align: center;
+    line-height: calc(17vw/4);
+    border-bottom: .3vw solid rgba(0, 0, 0, .2);
+}
+.cardLink{
+    text-decoration: none;
+    color: #ff3600;
+    font-family: "inter"; 
+    font-size: 2vw;
+}
+#menuCards{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    justify-content: center;
+    display: grid;
+    gap: 2vw 2vw;
+    grid-template-columns: 17vw 17vw 17vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "card7 card8 card9";
+}
+#card1{
+    grid-area: card1;
+}
+#card2{
+    grid-area: card2;
+}
+#card3{
+    grid-area: card3;
+}
+#card4{
+    grid-area: card4;
+}
+#card5{
+    grid-area: card5;
+}
+#card6{
+    grid-area: card6;
+}
+#card7{
+    grid-area: card7;
+}
+#card8{
+    grid-area: card8;
+}
+#card9{
+    grid-area: card9;
 }
 @font-face {
     font-family: "inter";
     src: url(Inter-Bold.ttf);
 }
+
