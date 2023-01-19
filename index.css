@@ -1,29 +1,50 @@
-/* #container{
+#container{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "heading"
-    "containermain"
+    "nav2"
+    "row0"
+    "main"
     "footer";
-} */
-#containermain{
-    /* position:relative;
-    top:12vh; */
+}
+#rowContainer{
     display: grid;
     text-align: center;
-    height: 130vh;
     grid-area: main;
     margin: 2% 10% 10%;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
     gap: 5%;
     grid-template-areas: 
     "row1"
     "row2"
-    "row3";
+ ;
 }
 
+#div1{
+border: 2px solid #eaeaea;
+height: 100vh;
+background-color: #ff3600;
+grid-area:row0;
+margin: 1% 2.5% 0% 2.5%;
+border-radius: 1% 1% 1% 1% / 2% 2% 2% 2% ;
+background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(chickentenders.png);
+background-size: cover;
+background-position: center;
+}
+
+.caption1{
+    font-size: 5vmin;
+    margin-bottom: 0%;
+}
+.textCard{
+    padding-top: 15%;
+    color:white;
+    font-family: "inter";
+    font-size: 10vmin;
+    font-weight: bold;
+}
 .row1{
     grid-area: row1;
     display: grid;
@@ -39,17 +60,12 @@
     grid-area: image1;
     background-color: #ff3600;
     border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
-    /* background: url('fchicken.png') no-repeat;*/
-    /* background-size: 100%; 
-    background-image: url("fchicken.png");
-     */
-  /* position: relative;
-  background-position: 5vh; */
-  /* background-attachment: fixed; */
-  /* background-size: 40%;  */
 
 }
 
+.cover{
+    width: 100%;
+}
 #image1{
     width: 70%;
   object-fit: cover;
@@ -90,7 +106,7 @@ h2{
     border-radius:7% 0% 0% 7% / 8% 0% 0% 8%  ;
 }
 
-.row3{
+/* .row3{
     grid-area: row3;
     display: grid;
     grid-template-columns: 3fr 1.45fr;
@@ -113,7 +129,7 @@ h2{
     background-color: white;
     border-radius:0% 7% 7% 0% / 0% 8% 8% 0% ;
 
-}
+} */
 
 .btn, .btn:visited{
     text-decoration: none;
@@ -208,4 +224,5 @@ nav > a:hover{
     height: 12vh;
     border-bottom: .3vw solid rgba(0, 0, 0, 0);
     margin: 0;
+    grid-area: nav2;
 }
