@@ -77,7 +77,6 @@ nav>a:hover {
 .aboutTitle{
     text-align: center;
     font-family: inter;
-    text-decoration: underline;
 }
 
 .story{
@@ -128,6 +127,7 @@ nav>a:hover {
 .aboutContainer{
     font-family: 'inter';
     display: grid;
+    height: 100vh;
     text-align: center;
     column-gap: 1.5%;
     row-gap: 2%;
@@ -225,7 +225,7 @@ nav>a:hover {
     font-family: 'inter';
     text-align: center;
     column-gap: 1.5%;
-    row-gap: 2%;
+    row-gap: 1.5%;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -307,7 +307,7 @@ nav>a:hover {
     display: grid;
     grid-area: leader2Other;
     column-gap: 1.5%;
-    row-gap: 2%;
+    row-gap: 1.5%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -322,7 +322,7 @@ nav>a:hover {
     font-family: 'inter';
     text-align: center;
     column-gap: 1.5%;
-    row-gap: 2%;
+    row-gap: 1%;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -409,7 +409,7 @@ nav>a:hover {
     font-family: 'inter';
     text-align: center;
     column-gap: 1.5%;
-    row-gap: 2%;
+    row-gap: 1.5%;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -418,6 +418,8 @@ nav>a:hover {
         'news3 .'
         'news2Other news2Other';
 }
+
+/* about caleb feather page */
 
 @media screen and (max-width: 1025px) {
     .aboutContainer{
@@ -429,12 +431,13 @@ nav>a:hover {
         'story'
         'values'
         'leader'
-        'news';
+        'news'
+        'footer';
     }
 
     .leaderContainer{
         column-gap: 0%;
-        row-gap: 2%;
+        row-gap: 1.5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -448,7 +451,7 @@ nav>a:hover {
 
     .valueContainer{
         column-gap: 0%;
-        row-gap: 2%;
+        row-gap: 1.5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -456,6 +459,18 @@ nav>a:hover {
         'value2'
         'value3'
         'value2Other';
+    }
+
+    .newsContainer{
+        column-gap: 0%;
+        row-gap: 1.5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'news1'
+        'news2'
+        'news3'
+        'news2Other';
     }
 }
 
