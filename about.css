@@ -3,11 +3,12 @@ html{
     width: 100%;
     height: 100%;
     padding: 0%;
+    
 }
 
 body {
-    background-color: #eaeaea;
     margin: 0%;
+    background-color: #DADDD8   ;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav>a {
 }
 
 nav>a:hover {
-    color: #ff3600;
+    color: #1b998b;
     text-decoration: underline .2vw;
 }
 
@@ -44,26 +45,26 @@ nav>a:hover {
 }
 
 #cart {
-    color: #ff3600;
+    color: #1b998b;
     font-size: 1vw;
     position: relative;
     left: 48%;
     transform: translateX(-50%);
     padding: .5vw 1vw;
-    border: #ff3600 solid .5vw;
+    border: #1b998b solid .5vw;
     border-radius: 15% / 45%;
     transition: .5s;
 }
 
 #cart:hover {
     color: white;
-    background-color: #ff3600;
+    background-color: #1b998b;
     text-decoration: none;
 }
 
 #menu {
     text-decoration: underline .2vw;
-    color: #ff3600;
+    color: #1b998b;
 }
 
 #nav2 {
@@ -82,40 +83,40 @@ nav>a:hover {
 .story{
     grid-area: story;
     justify-self: right;
-    background-color: #FF3600;
+    background-color: #1b998b;
     color: white;
-    border-radius: 7% 7% 7% 7%;
+    
 }
 
 .values{
     grid-area: values;
     justify-self: left;
-    background-color: #FF3600;
+    background-color: #1b998b;
     color: white;
-    border-radius: 7% 7% 7% 7%;
+    
 }
 
 .leader{
     grid-area: leader;
     justify-self: right;
-    background-color: #FF3600;
+    background-color: #1b998b;
     color: white;
-    border-radius: 7% 7% 7% 7%;
+    
 }
 
 .news {
     grid-area: news;
     justify-self: left;
-    background-color: #FF3600;
+    background-color: #1b998b;
     color: white;
-    border-radius: 7% 7% 7% 7%;
+    
 }
 
 .aboutPics{
     width: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 7% 7% 0% 0%;
+    
 }
 
 .aboutLink {
@@ -129,7 +130,7 @@ nav>a:hover {
     display: grid;
     text-align: center;
     column-gap: 1.5%;
-    row-gap: 3%;
+    row-gap: 2%;
     margin: auto;
     justify-items: center;
     width: 80%;
@@ -142,9 +143,9 @@ nav>a:hover {
 }
 
 /* about value page */
+
 .valueTitle{
     text-align: center;
-    font-family: 'inter';
     text-decoration: underline;
 }
 
@@ -154,6 +155,84 @@ nav>a:hover {
     width: 80%;
     margin: auto;
 
+}
+
+.valuePics {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    
+}
+
+.ingredients {
+    grid-area: value1;
+    background-color: #1b998b;
+    
+}
+
+.nutrients {
+    grid-area: value2;
+    background-color: #1b998b;
+    
+}
+
+.community {
+    grid-area: value3;
+    background-color: #1b998b;
+    
+}
+
+.valueLink {
+    text-decoration: none;
+    color: white;
+
+}
+
+.value2Story {
+    grid-area: value2Story;
+    background-color: #1b998b;
+    
+}
+
+.value2Leader {
+    grid-area: value2Leader;
+    background-color: #1b998b;
+    
+}
+
+.value2News {
+    grid-area: value2News;
+    background-color: #1b998b;
+    
+}
+
+.value2Other {
+    display: grid;
+    grid-area: value2Other;
+    column-gap: 1.5%;
+    row-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'value2Story value2Leader value2News';
+}
+
+
+.valueContainer {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    font-family: 'inter';
+    text-align: center;
+    column-gap: 1.5%;
+    row-gap: 2%;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'value1 value2'
+        'value3 .'
+        'value2Other value2Other';
 }
 
 /* about leader page */
@@ -167,31 +246,37 @@ nav>a:hover {
     object-fit: cover;
     object-position: center;
     width: 100%;
+    
 }
 
 .ceo {
     grid-area: ceo;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .cfo {
     grid-area: cfo;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .cio {
     grid-area: cio;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .sco {
     grid-area: sco;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .cmeo {
     grid-area: cmeo;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .leaderLink {
@@ -202,24 +287,27 @@ nav>a:hover {
 
 .leader2News{
     grid-area: leader2News;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .leader2Value{
     grid-area: leader2Value;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .leader2Story{
     grid-area: leader2Story;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .leader2Other{
     display: grid;
     grid-area: leader2Other;
     column-gap: 1.5%;
-        row-gap: 3%;
+    row-gap: 2%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -234,7 +322,7 @@ nav>a:hover {
     font-family: 'inter';
     text-align: center;
     column-gap: 1.5%;
-    row-gap: 3%;
+    row-gap: 2%;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -257,21 +345,25 @@ nav>a:hover {
     object-fit: cover;
     object-position: center;
     width: 100%;
+    
 }
 
 .news1 {
     grid-area: news1;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .news2 {
     grid-area: news2;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .news3 {
     grid-area: news3;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .newsLink {
@@ -282,39 +374,42 @@ nav>a:hover {
 
 .news2Story {
     grid-area: news2Story;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .news2Leader {
     grid-area: news2Leader;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .news2Value {
     grid-area: news2Value;
-    background-color: #FF3600;
+    background-color: #1b998b;
+    
 }
 
 .news2Other {
     display: grid;
     grid-area: news2Other;
     column-gap: 1.5%;
-    row-gap: 3%;
+    row-gap: 2%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'news2Story news2Leader leader2Value';
+        'news2Story news2Leader news2Value';
 }
 
 
-.newsContainer {
+.newsContainer{
     display: grid;
     width: 80%;
     margin: auto;
     font-family: 'inter';
     text-align: center;
     column-gap: 1.5%;
-    row-gap: 3%;
+    row-gap: 2%;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -322,13 +417,12 @@ nav>a:hover {
         'news1 news2'
         'news3 .'
         'news2Other news2Other';
-
 }
 
 @media screen and (max-width: 1025px) {
     .aboutContainer{
         column-gap: 0%;
-        row-gap: 1.5%;
+        row-gap: 2%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -336,6 +430,32 @@ nav>a:hover {
         'values'
         'leader'
         'news';
+    }
+
+    .leaderContainer{
+        column-gap: 0%;
+        row-gap: 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'ceo'
+        'cfo'
+        'cio'
+        'sco'
+        'cmeo'
+        'leader2Other';
+    }
+
+    .valueContainer{
+        column-gap: 0%;
+        row-gap: 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'value1'
+        'value2'
+        'value3'
+        'value2Other';
     }
 }
 
