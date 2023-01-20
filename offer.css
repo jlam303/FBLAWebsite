@@ -4,24 +4,26 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "nav2"
-    "row0"
     "main"
     "footer";
 }
-#rowContainer{
+#offerContainer{
     display: grid;
     text-align: center;
     grid-area: main;
     margin: 2% 10% 10%;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 5%;
     grid-template-areas: 
-    "row1"
-    "row2"
+    "col0 row1"
+    "col0 row2"
+    "col0 row3"
  ;
 }
-
+#col0{
+    grid-area: col0;
+}
 #imageCover{
 height: 90vh;
 background-color: #1B998B;
@@ -143,7 +145,7 @@ h2{
     font-family: "inter";
 }
 
-/* .row3{
+.row3{
     grid-area: row3;
     display: grid;
     grid-template-columns: 3fr 1.45fr;
@@ -152,6 +154,7 @@ h2{
     "image3 content3";
     border-bottom: .3vw solid rgba(0, 0, 0, .5);
     border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+    height: 50vh;
 }
 
 .img3{
@@ -166,7 +169,7 @@ h2{
     background-color: white;
     border-radius:0% 7% 7% 0% / 0% 8% 8% 0% ;
 
-} */
+}
 
 .btn, .btn:visited{
     text-decoration: none;
@@ -267,7 +270,7 @@ nav > a:hover{
 
 
 
-@media (max-width:750px) {
+/* @media (max-width:750px) {
     .textCard{
         position: absolute;
         padding-top: 0;
@@ -285,7 +288,6 @@ nav > a:hover{
         "image1 content1";
         border-bottom: .3vw solid rgba(0, 0, 0, .5);
         border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
-        /* height: 35vh; */
             height: 50vh;
     }
     #image1{
@@ -340,7 +342,7 @@ nav > a:hover{
         font-family: "inter";
     }
 
-    #rowContainer{
+    #offerContainer{
         display: grid;
         text-align: center;
         grid-area: main;
@@ -354,4 +356,4 @@ nav > a:hover{
      ;
     }
     
-}
+} */
