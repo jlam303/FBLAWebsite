@@ -437,7 +437,7 @@ nav>a:hover {
 
     .leaderContainer{
         column-gap: 0%;
-        row-gap: 1.5%;
+        row-gap: .5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -471,9 +471,43 @@ nav>a:hover {
         'news2'
         'news3'
         'news2Other';
+        }
     }
-}
 
+
+@media screen and (max-width: 725px){
+    .leader2Other{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'leader2Story'
+    'leader2Value'
+    'leader2News'
+    ; 
+    }
+
+    .value2Other{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'value2Story'
+    'value2Leader'
+    'value2News'
+    ; 
+    }   
+
+    .news2Other{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'news2Story'
+    'news2Value'
+    'news2Leader'
+    ; 
+    }   
+
+
+}
 @font-face {
     font-family: "inter";
     src: url(Inter-Bold.ttf);
