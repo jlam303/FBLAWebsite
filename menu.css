@@ -5,6 +5,9 @@ html{
 body{
     background-color: #E1E8DC;
     margin: 0%;
+    background-image: url(TestWall.png);
+    background-position: center;
+    background-size: 20vw;
 }
 nav{
     display: flex;
@@ -26,7 +29,7 @@ nav{
     margin: 0;
 }
 nav > a{
-    color: #585B56;
+    color: #2e4057;
     position: relative;
     text-decoration: none;
     transition: .3s;
@@ -69,7 +72,7 @@ nav > a:hover{
 }
 #menu{
     text-decoration: underline .2vw;
-    color:#1B998B;
+    color:#F4562A;
 }
 .mT{
     height: calc(20vw * 3 / 4);
@@ -97,13 +100,25 @@ nav > a:hover{
     color: #F4562A;
     font-family: "inter"; 
     font-size: 1.8vw;
+    
 }
-.cardLink:hover{
+.cardLink:hover {
     position: relative;
     bottom: 5%;
 }
+.cardLink:hover .mT{
+    transform: rotate(5deg);
+    border-top: .6vw solid rgba(244, 86, 42, 1);
+    border-right: .6vw solid rgba(244, 86, 42, 1);
+    border-left: .6vw solid rgba(244, 86, 42, 1);
+    border-bottom: .6vw solid rgba(244, 86, 42, 1);
+}
 .cardLink:hover .mB{
-    border-bottom: .6vw solid rgba(0, 0, 0, .2);
+    border-top: .6vw solid rgba(244, 86, 42, 1);
+    border-right: .6vw solid rgba(244, 86, 42, 1);
+    border-left: .6vw solid rgba(244, 86, 42, 1);
+    border-bottom: .6vw solid rgba(244, 86, 42, 1);
+    transform: rotate(5deg);
 }
 #menuCards{
     margin-top: 2vw;
@@ -141,6 +156,6 @@ nav > a:hover{
 }
 footer{
     height: 30vh;
-    background-color: #585B56;
+    background-color: #2e4057;
 }
 
