@@ -32,7 +32,7 @@ nav > a{
     transition: .3s;
 }
 nav > a:hover{
-    color: #ff3600;
+    color: #F4562A;
 }
 #logo{
     padding-left: 2vw;
@@ -52,29 +52,29 @@ nav > a:hover{
     left: 20%;
 }
 #cart{
-    color: #ff3600;
+    color: #F4562A;
     font-size: 1vw;
     position: relative;
     left: 68%;
     transform: translateX(-50%);
     padding: .5vw 1vw;
-    border: #ff3600 solid .5vw;
+    border: #1B998B solid .5vw;
     border-radius: 15% / 45%;
     transition: .5s;
 }
 #cart:hover{
     color: white;
-    background-color: #ff3600; 
+    background-color: #1B998B; 
     text-decoration: none;
 }
 #menu{
     text-decoration: underline .2vw;
-    color:#ff3600;
+    color:#1B998B;
 }
 .mT{
     height: calc(20vw * 3 / 4);
     width: 20vw;
-    background-color: #ff3600;
+    background-color: #1B998B;
     border-radius: 10% 10% 0% 0% / 13.34% 13.34% 0% 0%  ;
 }
 .mT > img{
@@ -94,7 +94,7 @@ nav > a:hover{
 }
 .cardLink{
     text-decoration: none;
-    color: #ff3600;
+    color: #F4562A;
     font-family: "inter"; 
     font-size: 1.8vw;
 }
@@ -103,7 +103,7 @@ nav > a:hover{
     bottom: 5%;
 }
 .cardLink:hover .mB{
-    border-bottom: 1vw solid rgba(0, 0, 0, .2);
+    border-bottom: .6vw solid rgba(0, 0, 0, .2);
 }
 #menuCards{
     margin-top: 2vw;
