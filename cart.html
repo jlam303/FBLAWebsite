@@ -16,7 +16,7 @@
     <title>Feathers n' Fries</title>
 </head>
 
-<body>
+<body onload="refreshCart()">
     <nav>
         <a href="index.html" id="feather"><img id="logo" src="bitmap.png" alt="Chicken Logo"></a>
         <a id="menu" href="menu.html">Menu</a>
@@ -26,6 +26,7 @@
         <a id="cart" href="cart.html">	<i class="fa-solid fa-cart-shopping"></i> : $00.00</a>
         <button id="navBurger" onclick="openM()"><i class="fa-solid fa-bars"></i></button>
     </nav>
+    <div id="nav2"></div>
     <div id="navPop">
         <button id="X" onclick="closeM()"><i class="fa-solid fa-x"></i></button>
         <a id="menu" href="menu.html">Menu</a>
@@ -33,51 +34,37 @@
         <a id="about"href="about.html">About</a>
         <a id="contact" href="#footer">Contact</a>
     </div>
-    <div id="nav2"></div>
-    <div id="menuCards">
-        <div id="card1">
-            <a href="menuNew.html" class="cardLink">
-                <div class = "mT"><img src="images/biscuit.png" alt="A biscuit"></div>
-                <div class = "mB">New Items</div>
-            </a>
+    <div id="location">
+        <button id="locationText" onclick="find()"><i class="fa-solid fa-location-dot"></i> Set Location</button>
+    </div>
+    <div id="cartHold">
+        <div id="cartItems">
+            <h1>Items:</h1>
+            
+            <div id="cartSpace">
+            </div>
         </div>
-        <div id="card2">
-            <a href="" class="cardLink">
-                <div class = "mT"><img src="images/tenders.png" alt="Chicken Tenders"></div>
-                <div class = "mB">Chicken</div>
-            </a>
-        </div>  
-        <div id="card3">
-            <a href="" class="cardLink">
-                <div class = "mT"><img src="images/deluxe.png" alt="Chicken Sandwich"></div>
-                <div class = "mB">Sandwiches</div>
-            </a>
-        </div> 
-        <div id="card4">
-            <a href="" class="cardLink">
-                <div class = "mT"><img src="images/mac.png" alt="Mac n Cheese"></div>
-                <div class = "mB">Sides</div>
-            </a>
+        <div id="checkout">
+            <button class="clear" onclick="clearCart()">Clear Cart</button>
+            
+            <div id="inputs">
+                <h1>Enter Card Info</h1>
+                <input class="it"type="text" placeholder="Full Name">
+                <input class="it"type="text" placeholder="Card Number">
+                <input class="it"type="text" placeholder="MM/YY">
+                <input class="it"type="text" placeholder="CVV">
+                <input class="it"type="text" placeholder="Zip">
+            </div>
+
+            <button class="clear" onclick="clearCart(); clearForms();">checkout</button>
         </div>
-        <div id="card5">
-            <a href="" class="cardLink">
-                <div class = "mT"><img src="images/cola.png" alt="Coca cola"></div>
-                <div class = "mB">Drinks</div>
-            </a>
-        </div>  
-        <div id="card6">
-            <a href="" class="cardLink">
-                <div class = "mT"><img src="images/cookie.png" alt="Chocolate Chip Cookie"></div>
-                <div class = "mB">Sweets</div>
-            </a>
-        </div>    
     </div>
     
     <footer id="footer">
 
     </footer>
-    <script src="cart.js"></script>
     <script src="nav.js"></script>
+    <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/b45185f8d5.js" crossorigin="anonymous"></script>
 </body>
 
