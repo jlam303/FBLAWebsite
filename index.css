@@ -6,12 +6,83 @@
     "nav2"
     "row0"
     "main"
+    "main2"
     "footer";
 }
-#rowContainer{
+
+#colContainer{
+    color: white;
     display: grid;
     text-align: center;
     grid-area: main;
+    margin: 6% 8% 8%;
+    margin-bottom: 4%;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 3vmin;
+    grid-template-rows: auto;
+    gap: 5%;
+    font-family: 'inter';
+    grid-template-areas: 
+    "column1 column2 column3"
+ ;
+}
+
+.col1{
+grid-area: column1;
+background-color: #1B998B;
+border-radius:7% 7% 7% 7% / 8% 8% 8% 8%;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 1fr 1.25fr;
+grid-template-areas:
+"icon1"
+"txt1";
+}
+
+.col2{
+grid-area: column2;
+background-color: #1B998B;
+border-radius:7% 7% 7% 7% / 8% 8% 8% 8%;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 1fr 1.25fr;
+grid-template-areas:
+"icon2"
+"txt2";
+}
+
+.col3{
+grid-area: column3;   
+background-color: #1B998B;
+border-radius:7% 7% 7% 7% / 8% 8% 8% 8%;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 1fr 1.25fr;
+grid-template-areas:
+"icon3"
+"txt3";
+}
+
+.txt1{grid-area: txt1;
+background-color: white;
+color: #f4562a;
+border-radius:0% 0% 7% 7% / 0% 0% 8% 8%;
+}
+.txt2{
+grid-area: txt2;
+background-color: white;
+color: #f4562a;
+border-radius:0% 0% 7% 7% / 0% 0% 8% 8%;
+}
+.txt3{grid-area: txt3;
+    background-color: white;
+    color: #f4562a;
+    border-radius:0% 0% 7% 7% / 0% 0% 8% 8%;
+}
+ #rowContainer{
+    display: grid;
+    text-align: center;
+    grid-area: main2;
     margin: 2% 10% 10%;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr ;
@@ -22,20 +93,28 @@
  ;
 }
 
-#imageCover{
+i{
+    margin:5%
+}
+ #imageCover{
 height: 90vh;
 background-color: #1B998B;
 grid-area:row0;
-background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(mainpagechicken.png);
+background: linear-gradient(to left, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url(mainpagechicken.png);
 background-size: cover;
 background-position: center;
-}
+border-bottom: .6vmin solid #eaeaea;
+} 
 
+.textPadding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .caption1{
     font-size: 4vmin;
     margin-top: 0%;
     margin-bottom: 0%;
-}
+} 
 
 .btnCard,
 .btnCard:visited {
@@ -67,6 +146,12 @@ background-position: center;
     font-weight: bold;
     margin-left: 2%;
 }
+
+
+
+
+
+
 .row1{
     grid-area: row1;
     display: grid;
@@ -76,7 +161,6 @@ background-position: center;
     "image1 content1";
     border-bottom: .3vw solid rgba(0, 0, 0, .5);
     border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
-    /* height: 35vh; */
         height: 50vh;
 }
 
@@ -107,11 +191,13 @@ h2{
     font-family: "inter";
     font-size: 8vmin;
     margin:3vh 0;
+    color: #f4562a;
 }
 
 #rowtextSize{
-    font-size: 3vmin;
-    margin-bottom:0;
+    font-size: 5vmin;
+    color: #f4562a;
+    margin-bottom: 5%;
 }
 .row2{
     grid-area: row2;
@@ -143,7 +229,7 @@ h2{
     font-family: "inter";
 }
 
-/* .row3{
+.row3{
     grid-area: row3;
     display: grid;
     grid-template-columns: 3fr 1.45fr;
@@ -166,11 +252,11 @@ h2{
     background-color: white;
     border-radius:0% 7% 7% 0% / 0% 8% 8% 0% ;
 
-} */
+}
 
 .btn, .btn:visited{
     text-decoration: none;
-    color: #1B998B;
+    color: #f4562a;
     border: 3px solid #1B998B;
     border-radius: 999vw;
     padding: 2% 8% 2% 8%;
@@ -185,6 +271,13 @@ h2{
  color: white;
 }
 
+
+
+
+
+
+
+
 html{
     padding: 0%;
     margin: 0%;
@@ -192,6 +285,9 @@ html{
 body{
     background-color: #eaeaea;
     margin: 0%;
+    background-image: url(doodle.png);
+    background-position: center;
+    background-size: 30vw;
 }
 nav{
     font-family: "inter";
@@ -225,7 +321,7 @@ nav > a:hover{
     height: 3.5vw;
 }
 #cart{
-    color: #1B998B;
+    color: #f4562a;
     font-size: 1vw;
     position: relative;
     left: 48%;
@@ -247,7 +343,7 @@ nav > a:hover{
 
 @font-face {
     font-family: "inter";
-    src: url(Inter-Bold.ttf);
+    src: url(Sugar_Snow.ttf);
 }
 
 #heading{
@@ -305,11 +401,13 @@ nav > a:hover{
         font-family: "inter";
         font-size: 8vmin;
         margin:3vh 0;
+        color: #f4562a;
     }
     
     #rowtextSize{
         font-size: 3vmin;
         margin-bottom:0;
+        
     }
     .row2{
         grid-area: row2;
