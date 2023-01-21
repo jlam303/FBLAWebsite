@@ -9,7 +9,8 @@ function success(position){
     .then(response => response.json())
     .then(result => {
         let city = result.results[0].components.city;
-        if(city == "Peoria"){
+        console.log(city);
+        if(city == "Tempe"){
             delivery = true;
             document.getElementById("locationText").style.borderRadius = "5%/15%"
             document.getElementById("locationText").innerHTML = '<i class="fa-solid fa-location-dot"></i> ' + city
@@ -26,7 +27,7 @@ function fail(){
     alert("Unable to find location")
 }
 let overall = 0; 
-let names =["$5 Chicken Biscuit","$3 Sausage Muffin", "$4 Bacon Muffin" , "$2 Chicken Burrito", "$4 Chicken Minis", "$3 Grilled Muffin"];
+let names =["$5 Chicken Biscuit","$3 Sausage Muffin", "$4 Bacon Muffin" , "$2 Hashbrowns", "$4 Parfait", "$3 Cookies N' Cream"];
 let cost =[5,3,4,2,4,3];
 let items="";
 let array = [];
