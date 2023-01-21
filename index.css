@@ -197,10 +197,10 @@ nav > a:hover{
     background-color: #1B998B; 
     text-decoration: none;
 }
-#menu{
+/* #menu{
     text-decoration: underline .2vw;
     color:#1B998B;
-}
+} */
 
 @font-face {
     font-family: "inter";
