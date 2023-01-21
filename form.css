@@ -1,0 +1,484 @@
+form {
+    font-family: 'inter';
+    text-align: center;
+    width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid black;
+background-color: #1B998B;
+border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+
+  }
+  #formContainer {text-align: center;}
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    font-family: 'inter';
+    width: 100%;
+    color: #f4562a;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid black;
+
+  }
+  
+  input[type="submit"]:hover {
+    background-color:#1B998B;
+    border: 2px solid black;
+color: white;
+  }
+
+  #containerIndex{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav2"
+    "main"
+    "footer";
+}
+#offerContainer{
+    display: grid;
+    text-align: center;
+    grid-area: main;
+    margin: 2% 10% 0% 10% ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2.5%;
+    grid-template-areas: 
+    "col0 row1"
+    "col0 row2"
+    "col0 row3"
+ ;
+}
+#boxes{
+    height:100%;
+}
+#col0{
+    grid-area: col0;
+    background-color: #1B998B;
+    height: 80vh;
+    display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 4fr 1.4fr;
+        grid-template-areas:
+            "image0"
+            "content0";
+            /* border-radius: 4% 4% 4% 4% / 6% 6% 6% 6% ; */
+            border-radius: 8% 8% 4% 4% / 6% 6% 6% 6% ;
+}
+
+.picture0{
+    /* width:100%; */
+    /* height: 100%; */
+    border-radius: 8% 8% 0% 0% / 6% 6% 0% 0% ;
+}
+
+#image0{
+        grid-area: image0;
+        border-radius: 8% 8% 0% 0% / 6% 6% 0% 0% ;
+        background-image: url(cater.png);
+    background-size: cover;
+    background-position: top;
+    object-fit: fill;
+}
+
+#content0 {
+        grid-area: content0;
+        background-color: white;
+        border-radius: 0% 0% 4% 4% / 0% 0% 6% 6%;
+}
+
+.row1{
+    grid-area: row1;
+    display: grid;
+    grid-template-columns: 3fr 1.45fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image1 content1";
+    border-bottom: .2vw solid rgba(0, 0, 0, .5);
+    border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+        height: 100%;
+}
+
+.img1{
+    grid-area: image1;
+    background-color: #1B998B;
+    border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
+    background-image: url("large-Spicy_Chicken-fullmenu-desktop.png");
+    background-size: cover;
+    background-position:center;
+        height: 100%;
+}
+
+
+#image1{
+    width: 70%;
+  object-fit: cover;
+object-position: center;
+}
+
+.content1{
+    grid-area: content1;
+    background-color: white;
+    border-radius:0% 7% 7% 0% / 0% 8% 8% 0%;
+    font-family: "inter";
+}
+
+h2, h3{
+    font-family: "inter";
+    font-size: 3vmin;
+    margin:3vh 0;
+    color: #f4562a;
+}
+
+#rowtextSize0{
+    font-size:2.5vmin;
+    color: #f4562a;
+    font-family: "inter";
+}
+.heading0{
+    margin-bottom: 2vh;
+}
+#rowtextSize{
+    font-size: 3vmin;
+    margin-bottom:0;
+    margin: 1%;
+    font-family: "inter";
+    color: #f4562a;
+}
+.row2{
+    grid-area: row2;
+    display: grid;
+    grid-template-columns: 1.45fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "content2 image2";
+    border-bottom: .2vw solid rgba(0, 0, 0, .5);
+    border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+    height: 30vh;
+}
+
+.img2{
+    grid-area: image2;
+    background-color: #1B998B;
+    border-radius:0% 2% 2% 0% / 0% 9% 9% 0% ;
+    background-image: url(Catering_Desktop_compressed.png);
+    background-size: cover;
+    background-position: top;
+    object-fit: fill;
+}
+
+
+.content2{
+    grid-area: content2;
+    background-color: white;
+    border-radius:7% 0% 0% 7% / 8% 0% 0% 8%;
+    font-family: "inter";
+}
+
+.row3{
+    grid-area: row3;
+    display: grid;
+    grid-template-columns: 3fr 1.45fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image3 content3";
+    border-bottom: .2vw solid rgba(0, 0, 0, .5);
+    border-radius:2% 2% 2% 2% / 9% 9% 9% 9% ;
+    height: 30vh;
+        font-family: "inter";
+}
+
+.img3{
+    grid-area: image3;
+    background-color: #1B998B;
+    border-radius:2% 0% 0% 2% / 9% 0% 0% 9% ;
+    background-image: url(burger.png);
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+}
+
+
+.content3{
+    grid-area: content3;
+    background-color: white;
+    border-radius:0% 7% 7% 0% / 0% 8% 8% 0% ;
+    
+
+}
+
+.btn, .btn:visited{
+    text-decoration: none;
+    color: #f4562a;
+    border: #1B998B solid .5vw;
+    border-radius: 999vw;
+    padding: .5vw 1vw;
+    font-size: 2.3vmin;
+    position: relative;
+    top: 15%;
+}
+
+.btn:hover{
+ transition: .5seconds;
+ background-color: #1B998B;
+ color: white;
+}
+
+html{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #eaeaea;
+    margin: 0%;
+    background-image: url(doodle.png);
+    background-position: center;
+    background-size: 30vw;
+}
+nav{
+    font-family: "inter";
+    z-index: 1000;
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: .2vw solid rgba(0, 0, 0, .2);
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: inter; 
+
+}
+nav > a{
+    color: black;
+    padding-left: 5vw;
+    text-decoration: none;
+    transition: .2s;
+}
+nav > a:hover{
+    color: #1B998B;
+    text-decoration: underline .2vw;
+}
+#logo{
+    padding-left: 2vw;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+#cart{
+    color: #f4562a;
+    font-size: 1vw;
+    position: relative;
+    left: 48%;
+    transform: translateX(-50%);
+    padding: .5vw 1vw;
+    border: #1B998B solid .5vw;
+    border-radius: 15% / 45%;
+    transition: .5s;
+}
+#cart:hover{
+    color: white;
+    background-color: #1B998B; 
+    text-decoration: none;
+}
+#offers{
+    text-decoration: underline .2vw;
+    color:#1B998B;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(Sugar_Snow.ttf);
+}
+
+#heading{
+    grid-area: heading;
+}
+
+#nav2{
+    height: 12vh;
+    border-bottom: .2vw solid rgba(0, 0, 0, 0);
+    margin: 0;
+    grid-area: nav2;
+}
+
+
+@media screen and (min-width: 1400px) {
+    .textCard{
+        position: absolute;
+        padding-top: 0;
+        bottom:0%;
+        color:white;
+        font-size: 10vmin;
+    }
+
+    h2{
+        font-family: "inter";
+        font-size: 3vmin;
+        margin:3vh 0;
+    }
+    
+
+    #rowtextSize{
+        font-size: 2vmin;
+        margin-bottom:0;
+    }
+
+    
+}
+
+@media only screen and (max-width:1399px) {
+    .textCard{
+        position: absolute;
+        padding-top: 0;
+        bottom:0%;
+        color:white;
+        font-size: 10vmin;
+    }
+
+    .row1, .row2, .row3{
+            height: 50vh;
+    }
+
+    h2{
+        font-family: "inter";
+        font-size:3vmin;
+        margin:3vh 0;
+        margin-bottom: 10%;
+    }
+    
+    .btn, .btn:visited{
+        font-size:2.5vmin;
+        /* top: 5%; */
+    }
+
+    #rowtextSize{
+        font-size:2vmin;
+        margin:0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #offerContainer{
+        display: grid;
+        text-align: center;
+        grid-area: main;
+        margin: 2% 10% 0% 10% ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2.5%;
+        grid-template-areas: 
+        "col0 row1"
+        "col0 row2"
+        "col0 row3"
+     ;
+    }
+        .row1, .row2, .row3{
+                height: 30vh;
+        }
+        .row1{
+            grid-template-columns: 3fr 1.75fr;
+        }
+        .row2{
+            grid-template-columns: 1.75fr 3fr;
+        }
+        .row3{
+            grid-template-columns: 3fr 1.75fr;
+        }
+    }
+    
+    @media only screen and (max-width:1000px) {
+        #offerContainer{
+            display: grid;
+            text-align: center;
+            grid-area: main;
+            margin: 2% 10% 0% 10% ;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 2.5%;
+            grid-template-areas: 
+            "col0"
+            "col0"
+            "row1"
+            "row2"
+            "row3"
+         ;
+        }
+        .textCard{
+            position: absolute;
+            padding-top: 0;
+            bottom:0%;
+            color:white;
+            font-size: 10vmin;
+        }
+    
+        .row1, .row2, .row3{
+                height: 40vh;
+        }
+    
+        h2{
+            font-family: "inter";
+            font-size:3vmin;
+            margin:3vh 0;
+            margin-bottom: 10%;
+        }
+        
+        .btn, .btn:visited{
+            font-size:2.5vmin;
+            /* top: 5%; */
+        }
+    
+        #rowtextSize{
+            font-size:3vmin;
+            margin:0;
+        }
+        #rowtextSize0{
+            font-size: 3vmin;
+        }
+        
+    }
+
+     
+    @media only screen and (max-width:900px) {
+        h2{
+            font-family: "inter";
+            font-size:4vmin;
+            margin:3vh 0;
+            margin-bottom: 10%;
+        }
+        #rowtextSize{
+            font-size:3vmin;
+            margin:0;
+        }
+        #rowtextSize0{
+            font-size:3vmin;
+        }
+        h3{
+            font-size: 3vmin;
+        }
+        .btn, .btn:visited{
+            font-size:5vmin;
+
+        }
+    }
+
+ 
+  
