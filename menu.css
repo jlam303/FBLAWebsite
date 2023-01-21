@@ -75,36 +75,38 @@ nav > a:hover{
     color:#F4562A;
 }
 .mT{
-    height: calc(100% * 3 / 4);
+    height: 75%;
     width: 100%;
     background-color: #1B998B;
     border-radius: 10% 10% 0% 0% / 13.34% 13.34% 0% 0%  ;
     transition: .3s;
 }
 .mT > img{
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
+    text-decoration: none;
+
 }
 .mB{
-    height: 100%/4;
+    height: 25%;
     width: 100%;
     background-color: white;
     border-radius: 0% 0% 10% 10% / 0% 0% 40% 40% ;
     text-align: center;
-    line-height: calc(20vw/4);
     border-bottom: .3vw solid rgba(0, 0, 0, .2);
     transition: .3s;
+    line-height: 5rem;
 }
 .cardLink{
+    display: block;
     text-decoration: none;
     color: #F4562A;
     font-family: "inter"; 
     font-size: 2.7rem;
-    transform: rotate(20deg);
-}
-.cardLink:hover {
+    height: 100%;
+    width: 100%;
 }
 .cardLink:hover .mT{
     border: #F4562A solid;
@@ -117,17 +119,22 @@ nav > a:hover{
     transform: rotate(4deg);
 }
 #menuCards{
+    margin: auto;
     margin-top: 2vw;
     margin-bottom: 2vw;
     justify-content: center;
     display: grid;
-    gap: 2vw 2vw;
-    width: 75%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vw 20vw;
+    height: calc(666.666667px + 2vw);
+    max-width: calc(1000px + 4vw);
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     "card1 card2 card3"
     "card4 card5 card6";
+}
+#menuCards > div{
+    height: 100%;
+    width: 100%;
 }
 #card1{
     grid-area: card1;
