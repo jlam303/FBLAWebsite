@@ -64,6 +64,6 @@ function createItem(cost, item){
 function clearForms(){
     var inputs = document.getElementsByClassName("it");
     for (var i = 0; i < inputs.length; i++) {
-        inputs.value = ""
+        inputs[i].value = ""
     }
 }
