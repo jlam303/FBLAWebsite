@@ -425,13 +425,6 @@ nav>a:hover {
     text-align: center;
 }
 
-.storyList{
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    border-radius: 5% 5% 5% 5%;
-}
-
 .storyYear{
     font-size: 36px;
     text-align: center;
@@ -439,10 +432,50 @@ nav>a:hover {
 
 .storyList{
     text-align: center;
+    grid-area: storyList;
+    background-color: white;
 }
 
 .storyDesc{
     font-size: 24px;
+}
+.story2Value{
+    grid-area: story2Value;
+    background-color: #1b998b;
+}
+
+.story2Leader {
+    grid-area: story2Leader;
+    background-color: #1b998b;
+}
+
+.story2News {
+    grid-area: story2News;
+    background-color: #1b998b;
+}
+.story2Other {
+    display: grid;
+    text-align: center;
+    grid-area: story2Other;
+    column-gap: 1.5%;
+    row-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'story2Value story2News story2Leader';
+}
+
+.storyContainer{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    column-gap: 1.5%;
+    row-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'storyList storyList storyList'
+    'story2Other story2Other story2Other';
 }
 
 progress {
@@ -474,6 +507,8 @@ progress::-webkit-progress-value {
     border-top-right-radius: 5px;
     z-index: -1;
 }
+
+
 @media screen and (max-width: 1025px) {
     .aboutContainer{
         column-gap: 0%;
@@ -527,12 +562,15 @@ progress::-webkit-progress-value {
         }
     }
 
-        .storyList{
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    border-radius: 2% 3% 2% 3%;
-}
+
+
+.storyContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'storyList'
+        'story2Other';
+} 
 
 
 @media screen and (max-width: 725px){
@@ -566,15 +604,18 @@ progress::-webkit-progress-value {
     ; 
     }
 
-    .storyList{
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    border-radius: 2% 2% 2% 2%;
+    .story2Other {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'story2Value'
+    'story2News'
+    'story2Leader';
+} 
 }
 
 
-}
+
 @font-face {
     font-family: "inter";
     src: url(Sugar_Snow.ttf);
