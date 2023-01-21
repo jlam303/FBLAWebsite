@@ -230,7 +230,7 @@ nav > a{
     transition: .2s;
 }
 nav > a:hover{
-    color: #1B998B;
+    color: #f4562a;
     text-decoration: underline .2vw;
 }
 #logo{
@@ -256,7 +256,13 @@ nav > a:hover{
 }
 #offers{
     text-decoration: underline .2vw;
-    color:#1B998B;
+    color:#f4562a;
+}
+
+#logo {
+    padding-left: 2vw;
+    width: 7rem;
+    height: 7rem;
 }
 
 @font-face {

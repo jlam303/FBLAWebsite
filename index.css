@@ -172,14 +172,14 @@ nav > a{
     text-decoration: none;
     transition: .3s;
 }
-nav > a:hover{
-    color: #1B998B;
+nav>a:hover {
+    color: #f4562a;
     text-decoration: underline .2vw;
 }
-#logo{
+#logo {
     padding-left: 2vw;
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 7rem;
+    height: 7rem;
 }
 #cart{
     color: #f4562a;

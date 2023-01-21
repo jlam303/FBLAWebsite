@@ -35,18 +35,23 @@ nav>a {
 }
 
 nav>a:hover {
-    color: #1b998b;
+    color: #f4562a;
     text-decoration: underline .2vw;
 }
 
-#logo {
+#logo{
     padding-left: 2vw;
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 7rem;
+    height: 7rem;
+}
+
+#about{
+    text-decoration: underline .2vw;
+    color: #f4562a;
 }
 
 #cart {
-    color: #1b998b;
+    color: #f4562a;
     font-size: 1vw;
     position: relative;
     left: 48%;
@@ -63,10 +68,6 @@ nav>a:hover {
     text-decoration: none;
 }
 
-#menu {
-    text-decoration: underline .2vw;
-    color: #1b998b;
-}
 
 #nav2 {
     height: 12vh;
@@ -520,6 +521,9 @@ progress::-webkit-progress-value {
     color: #1b998b;
 }
 
+.footerA{
+    color: white;
+}
 .footerName{
     grid-area: footerName;
     font-size: xx-large;
@@ -571,7 +575,8 @@ progress::-webkit-progress-value {
 
 .footerCopy{
     grid-area: footerCopy;
-    background-color: rgb(82, 80, 80);
+    background-color: #263345;
+    height: 4vh;
 }
 
 .footerCredits{
@@ -597,8 +602,9 @@ progress::-webkit-progress-value {
 .footer{
     display: grid;
     text-align: center;
+    background-color: #2e4057;
     align-items: center;
-    background-color: gray;
+    color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
