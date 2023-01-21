@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+<<<<<<< HEAD
     grid-template-areas:
         "nav2"
         "main"
@@ -486,6 +487,13 @@ nav>a:hover {
         "row0"
         "main"
         "footer";
+=======
+    grid-template-areas: 
+    "nav2"
+    "row0"
+    "main"
+    "footer";
+>>>>>>> parent of 05ffc6b (e)
 }
 
 #colContainer {
@@ -1713,7 +1721,8 @@ nav > a:hover{
     text-decoration: none;
 }
 #menu{
-    
+    text-decoration: underline .2rem;
+    color:#F4562A;
 }
 .mT{
     height: 75%;
