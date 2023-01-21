@@ -26,8 +26,32 @@ function fail(){
     alert("Unable to find location")
 }
 let overall = 0; 
-let names =["Chicken Biscuit","Sausage Muffin", "Bacon Muffin" , "Chicken Burrito", "Chicken Minis", "Grilled Muffin"];
-let items=""
+let names =["$5 Chicken Biscuit","$3 Sausage Muffin", "$4 Bacon Muffin" , "$2 Chicken Burrito", "$4 Chicken Minis", "$3 Grilled Muffin"];
+let cost =[5,3,4,2,4,3];
+let items="";
+let array = [];
+function refreshCart(){
+    array = localStorage.getItem("food").split(".")
+    for(let i =0;i<array.length-1;i++){
+        let temp = document.createElement("div")
+        temp.id = i
+        temp.innerHTML = array[i]
+        cartSpace.appendChild(temp)
+    }
+}
+function clearCart(){
+    for(let i =0;i<array.length-1;i++){
+        let temp = document.getElementById(i)
+        temp.remove();
+    }
+    localStorage.setItem("total", "0")
+    localStorage.setItem("food","")
+    refreshCart()
+}
+function initiateLocal(){
+    localStorage.setItem("total", "0")
+    localStorage.setItem("food",items)
+}
 function createItem(cost, item){
     overall = Number(localStorage.getItem("total"))
     overall += cost
@@ -35,4 +59,11 @@ function createItem(cost, item){
     items += names[item] + "."
     localStorage.setItem("food",items)
     document.getElementById("cart").innerHTML = '<i class="fa-solid fa-cart-shopping"></i> : $' + localStorage.getItem("total")
+    
+}
+function clearForms(){
+    var inputs = document.getElementsByClassName("it");
+    for (var i = 0; i < inputs.length; i++) {
+        inputs.value = ""
+    }
 }

@@ -426,6 +426,7 @@ footer{
     "cart checkout";
 }
 #checkout{
+    text-align: center;
     grid-area: checkout;
 }
 #cartItems{
@@ -433,4 +434,42 @@ footer{
     overflow-y: scroll;
     color: #F4562A;
     grid-area: cart;
+}
+#cartSpace > div{
+    color: white;
+    margin: auto;
+    border-radius: 5% / 40%;
+    width: 80%;
+    height: 10vh;
+    background-color: #1B998B;
+    margin-bottom: 2rem;
+    line-height: 10vh;
+}
+.clear{
+    margin-top: 2vw;
+    color: #F4562A;
+    font-size: 1.5rem;
+    padding: .5vw 1vw;
+    border: #1B998B solid .5rem;
+    border-radius: 15% / 45%;
+    transition: .5s;
+    background-color: transparent;
+    font-family: "inter";
+}
+.clear:hover{
+    color: white;
+    background-color: #1B998B; 
+    text-decoration: none;
+}
+#inputs{
+    color: #F4562A;
+    display: flex;
+    flex-direction: column;
+}
+#inputs > input{
+    width: 80%;
+    margin: auto;
+    padding: .6rem;
+    border: #2e4057 solid .4rem;
+    margin-bottom: 2rem;
 }

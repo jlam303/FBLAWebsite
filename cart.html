@@ -16,7 +16,7 @@
     <title>Feathers n' Fries</title>
 </head>
 
-<body>
+<body onload="refreshCart()">
     <nav>
         <a href="index.html"><img id="logo" src="bitmap.png" alt="Chicken Logo"></a>
         <a id="menu" href="menu.html">Menu</a>
@@ -32,15 +32,30 @@
     <div id="cartHold">
         <div id="cartItems">
             <h1>Items:</h1>
+            
+            <div id="cartSpace">
+            </div>
         </div>
         <div id="checkout">
+            <button class="clear" onclick="clearCart()">Clear Cart</button>
             
+            <div id="inputs">
+                <h1>Enter Card Info</h1>
+                <input class="it"type="text" placeholder="Full Name">
+                <input class="it"type="text" placeholder="Card Number">
+                <input class="it"type="text" placeholder="MM/YY">
+                <input class="it"type="text" placeholder="CVV">
+                <input class="it"type="text" placeholder="Zip">
+            </div>
+
+            <button class="clear" onclick="clearCart(); clearForms();">checkout</button>
         </div>
     </div>
     
     <footer id="footer">
 
     </footer>
+    <script src="nav.js"></script>
     <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/b45185f8d5.js" crossorigin="anonymous"></script>
 </body>
