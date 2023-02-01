@@ -1,6 +1,14 @@
-function openM(){
-    document.getElementById("navPop").style.display = "flex";
-}
-function closeM(){
-    document.getElementById("navPop").style.display = "none";
+document.getElementById("navButton").addEventListener("click",navBar)
+let openNav = false;
+function navBar(){
+    if(openNav == false){
+        
+
+        openNav = true;
+    }
+    else{
+        
+        
+        openNav = false;
+    }
 }
