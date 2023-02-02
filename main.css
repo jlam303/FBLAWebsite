@@ -32,8 +32,28 @@ nav > i {
     top: 50%;
     transform: translateY(-50%);
 }
-nav > i:hover{
-    
+#navPopup{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1000;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.navLinks{
+    padding: 0%;
+    position: relative;
+    left: 13%;
+    color: var(--main-color);
+    font-size: 6rem;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
 }
 /* Start of Main */
 .imgRows{
@@ -44,5 +64,5 @@ nav > i:hover{
 .test{
     background-color: white;
     height: 10vw;
-    width: calc(100vw/5 - calc(2rem/6 * 5));
+    width: calc(100vw/5 - calc(2rem/5 * 4));
 }
