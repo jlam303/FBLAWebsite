@@ -1,0 +1,101 @@
+:root{
+    --bg-color:#0D1821;
+    --main-color: white;
+    --accent-color: #EC0B43;
+}
+#logo{
+    height: 5.9rem;
+}
+#logo > img{
+    width: auto;
+    height:5.9rem;
+    line-height: 0;
+}
+nav{
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    color: var(--main-color);
+}
+nav > div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 8rem;
+}
+nav > div > a{
+    font-size: 2.8rem;
+    text-decoration: none;
+    color: var(--main-color);
+}
+nav > div > a:hover{
+    text-decoration: underline var(--accent-color) .25rem;
+}
+nav h1{
+    font-weight: normal;
+    font-size: 2.8rem;
+    width: 1rem;
+    margin: 0;
+    text-decoration: underline var(--accent-color) .25rem;
+}
+hr{
+    margin: auto;
+    height: .3rem;
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    width: calc(100vw - 6rem);
+    
+}
+#navBurger:hover{
+    cursor: pointer;
+}
+.bars{
+    width: 3rem;
+    height: .5rem;
+    margin-bottom: .75rem;
+    background-color: var(--accent-color);
+    
+}
+.bars:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+body{
+    font-family: "laxero";
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--bg-color);
+}
+html {
+    margin: 0%;
+    padding: 0%;
+}
+#mainContainer{
+    margin-top: 2rem;
+    display: grid;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+#mainContainer > h3:nth-of-type(1){
+    position: absolute;
+    top: 8.5rem;
+    color: white;
+}
+#mainContainer>h3:nth-of-type(2) {
+    position: absolute;
+    top: calc(5rem + 50vw);
+    color: white;
+}
+#mainContainer > img{
+    object-fit: cover;
+    width: 30%;
+}
+@font-face {
+    font-family: "laxero";
+    src: url(laxero.ttf);
+}
