@@ -5,7 +5,9 @@ $(function(){
     $("#mainContainer h3").slideUp(0).slideDown(800)
 })
 let nav = false;
-
+function search(){
+    
+}
 function goToOffers(){
     window.location.href='rooms.html';
 }
