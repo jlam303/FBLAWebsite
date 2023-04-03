@@ -3,6 +3,11 @@
     --main-color: white;
     --accent-color: #EC0B43;
 }
+@media screen and (max-width:1300px){
+    :root{
+        font-size: 65%;
+    }
+}
 body {
     font-family: "laxero";
     margin: 0%;
@@ -203,7 +208,7 @@ h2{
     margin-left: 4rem;
     margin-right: 4rem;
     height: 105rem;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     color: var(--main-color);
 }
 #topOffers h2{
@@ -285,7 +290,7 @@ h2{
 #roomSearch > input{
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
-    width: 10.5rem;
+    width: 12rem;
     font-size: 1.5rem;
     background-color: var(--accent-color);
     color: var(--main-color);
@@ -333,9 +338,52 @@ h2{
     font-family: "laxero";
 }
 #roomCon{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 110rem;
+    height: 80rem;
+    gap: 2rem;
+    grid-template-areas: 
+    "r1 r2 r3"
+    "r4 r5 r6";
+    margin: auto;
 }
-
+#roomCon >div> img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+#roomCon i{
+    color: var(--accent-color);
+}
+#roomCon>div>h3{
+    color: var(--main-color);
+    font-size: 3rem;
+    margin: 0;
+}
+#roomCon>div>div {
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+#room1{
+    grid-area: r1;
+}
+#room2 {
+    grid-area: r2;
+}
+#room3 {
+    grid-area: r3;
+}
+#room4 {
+    grid-area: r4;
+}
+#room5 {
+    grid-area: r5;
+}
+#room6 {
+    grid-area: r6;
+}
 footer{
     margin-top: 4rem;
     margin-bottom: 2rem;
