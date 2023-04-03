@@ -101,13 +101,13 @@ hr{
     z-index: 101;
     justify-content: center;
 }
-#navPopup > a{
+#navPopup a{
     text-decoration: none;
     color: var(--main-color);
     font-size: 6rem;
     margin-left: 3rem;
 }
-#navPopup>a:hover{
+#navPopup a:hover{
     text-decoration: underline var(--accent-color) .5rem;
 }
 #mainContainer{
@@ -332,11 +332,13 @@ h2{
     visibility: hidden;
     font-family: "laxero";
 }
+#roomCon{
 
+}
 
 footer{
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
     font-size: 2rem;
@@ -347,7 +349,6 @@ footer p{
     text-align: center;
 }
 footer p:nth-of-type(3){
-    
     background-color: var(--accent-color);
 }
 footer a{
