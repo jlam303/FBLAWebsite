@@ -7,7 +7,7 @@ $(function(){
 let nav = false;
 
 function goToOffers(){
-
+    window.location.href='rooms.html';
 }
 function openNav(){
     if(nav == false){
