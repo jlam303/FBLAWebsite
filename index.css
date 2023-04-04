@@ -3,16 +3,7 @@
     --main-color: white;
     --accent-color: #EC0B43;
 }
-@media screen and (max-width:1600px) {
-    :root {
-        font-size: 80%;
-    }
-}
-@media screen and (max-width:1300px){
-    :root{
-        font-size: 65%;
-    }
-}
+
 
 body {
     font-family: "laxero";
@@ -138,6 +129,7 @@ hr{
     "mainI .";
     font-family: "laxero";
     color: var(--main-color);
+    width: calc(100vw- 6rem);
 }
 #mainContainer>img {
     object-fit: cover;
@@ -202,6 +194,7 @@ h2{
     text-decoration: underline var(--accent-color) .5rem;
 }
 #topOffers{
+    margin: auto;
     margin-top: 4rem;
     display: grid;
     gap: 4rem;
@@ -211,10 +204,10 @@ h2{
     "o1 o2"
     "o1 o4"
     "o3 o4";
-    margin-left: 4rem;
-    margin-right: 4rem;
+
     height: 105rem;
-    margin-bottom: 8rem;
+    width: 100rem;
+    margin-bottom: 4rem;
     color: var(--main-color);
 }
 #topOffers h2{
@@ -251,7 +244,7 @@ h2{
     display: flex;
     gap: 1rem;
     justify-content: space-evenly;
-    width: 50rem;
+    width: 44rem;
 }
 .amenityCon > div{
     display: flex;
@@ -555,6 +548,74 @@ footer{
     color: var(--main-color);
     
 }
+#mapText{
+   
+    font-size: 4rem;
+    color: var(--main-color);
+    width: 80rem;
+    margin: auto;
+    margin-top: 4rem;
+}
+#mapText span{
+    text-decoration: underline var(--accent-color) .4rem;
+}
+#map {
+    height: 40rem;
+    width: 80rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+#contactText{
+    font-size: 4rem;
+        color: var(--main-color);
+        width: 80rem;
+        margin: auto;
+            margin-top: 4rem;
+}
+form{
+    margin: auto;
+    width: 20rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+form > button{
+   
+    margin-bottom: 0%;
+    width: 20rem;
+    border: solid var(--accent-color) .5rem;
+    padding: 1rem;
+    font-size:2.5rem;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-family: "laxero";
+}
+#faqT{
+    font-size: 4rem;
+        color: var(--main-color);
+        font-weight: normal;
+        text-align: center;
+        text-decoration: underline var(--accent-color) 0.5rem;
+}
+#faq{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    margin-bottom: 4rem;
+}
+#faq > div{
+    font-size: 4rem;
+        color: var(--main-color);
+        width: 100rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 0;
+
+}
+form>button:hover{
+    cursor: pointer;
+}
 footer p{
     text-align: center;
 }
@@ -572,7 +633,131 @@ footer >div{
     display: flex;
     justify-content: space-evenly;
 }
+@media screen and (max-width:1600px) {
+    :root {
+        font-size: 80%;
+    }
+}
 
+@media screen and (max-width:1300px) {
+    :root {
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    :root {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    :root {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    :root {
+        font-size: 50%;
+    }
+        #mainContainer {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            gap: 1rem 4rem;
+            display: grid;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "mainI"
+                "mainI"
+                "mainI"
+                "mainI"
+                "mainI"
+                "mainH"
+                "mainT"
+                "book";
+            font-family: "laxero";
+            color: var(--main-color);
+            width: calc(100vw- 6rem);
+        }
+                #mainContainer>h3:nth-of-type(2) {
+                    left: 80rem;
+                    transform: translateX(-50%);
+                    top: calc(9rem + (100vh - 16rem));
+                }
+    #topOffers {
+        margin: auto;
+        margin-top: 4rem;
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "o1"
+            "o2"
+            "o3"
+            "o4";
+        height: 105rem;
+        width: 70rem;
+        margin-bottom: 150rem;
+        color: var(--main-color);
+    }
+    #noah{
+        flex-direction: column;
+    }
+    #noah>img {
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+        margin-bottom: 2rem;
+    }
+        #noah>p{
+            margin-top: 0;
+        }
+}
+@media screen and (max-width:600px) {
+    #topOffers{
+        width: 48rem;
+        margin-bottom: 92rem;
+    }
+}
+@media screen and (max-width:450px) {
+    nav i, nav> div > a{
+        visibility: hidden;
+    }
+    #logo{
+        visibility: visible;
+    }
+    footer > div{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    #topOffers {
+        width: 30rem;
+        margin-bottom: 49rem;
+    }
+    #topOffers h2{
+        font-size: 3rem;
+    }
+        .amenityCon {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-evenly;
+            width: 26rem;
+        }
+                .amenityCon>div {
+                    height: 6rem;
+                }
+                                .infoCon {
+                                    position: relative;
+                                    top: -18rem;
+                                    left: 2rem;
+                                }
+}
 
 @font-face {
     font-family: "laxero";
