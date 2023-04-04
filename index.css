@@ -262,6 +262,9 @@ h2{
     top: -17rem;
     left: 2rem;
 }
+.infoCon:hover{
+    cursor: pointer;
+}
 #about{
     font-size: 4rem;
     color: var(--main-color);
@@ -338,36 +341,58 @@ h2{
     font-family: "laxero";
 }
 #roomCon{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     width: 110rem;
-    height: 80rem;
+    height: 60rem;
     gap: 2rem;
     grid-template-areas: 
     "r1 r2 r3"
     "r4 r5 r6";
     margin: auto;
+    text-decoration: none;
+    margin-bottom: 14rem;
+    flex-wrap: wrap;
 }
-#roomCon >div> img{
-    width: 100%;
-    height: 70%;
+#roomCon>a{
+    text-decoration: none;
+    height: 29rem;
+}
+#roomCon >a> img{
+    width: 35.33rem;
+    height: 29rem;
     object-fit: cover;
 }
 #roomCon i{
     color: var(--accent-color);
 }
-#roomCon>div>h3{
+#roomCon>a>h3{
     color: var(--main-color);
     font-size: 3rem;
     margin: 0;
+    text-decoration: none;
+    position: relative;
+    top: -28.5rem;
+    left: 1rem;
 }
-#roomCon>div>div {
+#roomCon>a>div {
     color: var(--main-color);
     font-size: 2.5rem;
+    text-decoration: none;
+    position: relative;
+    top: -11.5rem;
+    left: 1rem;
 }
+#roomCon>a>div:nth-of-type(1) {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+#roomCon>a>div:nth-of-type(2) {
+    text-decoration: underline var(--accent-color) .25rem;
+}
+
 #room1{
     grid-area: r1;
+    
 }
 #room2 {
     grid-area: r2;

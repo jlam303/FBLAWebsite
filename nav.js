@@ -3,11 +3,15 @@ $(function(){
     $("#navPopup").slideUp(0)
     $("#topOffers > div").on("click",goToOffers)
     $("#mainContainer h3").slideUp(0).slideDown(800)
+    $(".infoCon").on("click",goToOffers)
+    $("#roomCon img").hover(function() {
+        $(this).css("filter","blur(1.5px)")
+    },function() {
+        $(this).css("filter","blur(0px)")
+    })
 })
 let nav = false;
-function search(){
-    
-}
+
 function goToOffers(){
     window.location.href='rooms.html';
 }
