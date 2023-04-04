@@ -1,5 +1,5 @@
-:root{
-    --bg-color:#0D1821;
+:root {
+    --bg-color: #0D1821;
     --main-color: white;
     --accent-color: #EC0B43;
 }
@@ -17,15 +17,18 @@ html {
     padding: 0%;
     overflow: overlay;
 }
-#logo{
+
+#logo {
     height: 5.9rem;
 }
-#logo > img{
+
+#logo>img {
     width: auto;
-    height:5.9rem;
+    height: 5.9rem;
     line-height: 0;
 }
-nav{
+
+nav {
     position: sticky;
     top: 0%;
     display: flex;
@@ -38,32 +41,38 @@ nav{
     z-index: 102;
     background-color: var(--bg-color);
 }
-nav > div{
+
+nav>div {
     display: flex;
     gap: 1rem;
     align-items: center;
     height: 8rem;
 }
-nav > div > i{
+
+nav>div>i {
     color: var(--accent-color);
     font-size: 2.8rem;
 }
-nav > div > a{
+
+nav>div>a {
     font-size: 2.8rem;
     text-decoration: none;
     color: var(--main-color);
 }
-nav > div > a:hover{
+
+nav>div>a:hover {
     text-decoration: underline var(--accent-color) .25rem;
 }
-nav h1{
+
+nav h1 {
     font-weight: normal;
     font-size: 2.8rem;
     width: 1rem;
     margin: 0;
     text-decoration: underline var(--accent-color) .25rem;
 }
-hr{
+
+hr {
     position: sticky;
     top: 8rem;
     margin: auto;
@@ -74,23 +83,27 @@ hr{
     background-color: var(--accent-color);
     width: calc(100vw - 6rem);
     z-index: 100;
-    
+
 }
-#navBurger:hover{
+
+#navBurger:hover {
     cursor: pointer;
 }
-.bars{
+
+.bars {
     width: 3rem;
     height: .5rem;
     margin-bottom: .75rem;
     background-color: var(--accent-color);
     animation-fill-mode: forwards;
 }
+
 .bars:nth-of-type(3) {
     margin-bottom: 0;
     transition: .5s;
 }
-#navPopup{
+
+#navPopup {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -103,59 +116,67 @@ hr{
     z-index: 101;
     justify-content: center;
 }
-#navPopup a{
+
+#navPopup a {
     text-decoration: none;
     color: var(--main-color);
     font-size: 6rem;
     margin-left: 3rem;
 }
-#navPopup a:hover{
+
+#navPopup a:hover {
     text-decoration: underline var(--accent-color) .5rem;
 }
-#mainContainer{
+
+#mainContainer {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    gap:1rem 4rem ;
+    gap: 1rem 4rem;
     display: grid;
     margin-left: 3rem;
     margin-right: 3rem;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "mainI ."
-    "mainI mainH"
-    "mainI mainT"
-    "mainI book"
-    "mainI .";
+    grid-template-areas:
+        "mainI ."
+        "mainI mainH"
+        "mainI mainT"
+        "mainI book"
+        "mainI .";
     font-family: "laxero";
     color: var(--main-color);
     width: calc(100vw- 6rem);
 }
+
 #mainContainer>img {
     object-fit: cover;
     width: 100%;
     grid-area: mainI;
-    height: calc(100vh - 16rem) ;
+    height: calc(100vh - 16rem);
 }
-#mainHeader{
+
+#mainHeader {
     text-align: left;
     grid-area: mainH;
     font-weight: normal;
     font-size: 4rem;
     margin: 0%;
     text-decoration: none;
-}   
-#mainHeader > span{
+}
+
+#mainHeader>span {
     text-decoration: underline var(--accent-color) .4rem;
 }
+
 #mainText {
     grid-area: mainT;
     font-weight: normal;
     font-size: 2rem;
     margin: 0;
 }
-#book{
-    grid-area:book;
+
+#book {
+    grid-area: book;
     width: 50%;
     height: 60%;
     border: var(--accent-color) solid .5rem;
@@ -165,11 +186,13 @@ hr{
     font-size: 2rem;
     font-family: "laxero";
 }
-#book:hover{
+
+#book:hover {
     background-color: var(--accent-color);
     cursor: pointer;
 }
-#mainContainer > h3{
+
+#mainContainer>h3 {
     position: absolute;
     color: white;
     font-weight: normal;
@@ -177,76 +200,89 @@ hr{
     margin: 0%;
     text-decoration: underline var(--accent-color) .5rem;
 }
-#mainContainer > h3:nth-of-type(1){
+
+#mainContainer>h3:nth-of-type(1) {
     left: 1rem;
     top: 9rem;
 }
+
 #mainContainer>h3:nth-of-type(2) {
     left: calc((66.6vw - 12rem));
     transform: translateX(-50%);
     top: calc(9rem + (100vh - 16rem));
 }
-h2{
+
+h2 {
     font-size: 4rem;
     color: var(--main-color);
     font-weight: normal;
     text-align: center;
     text-decoration: underline var(--accent-color) .5rem;
 }
-#topOffers{
+
+#topOffers {
     margin: auto;
     margin-top: 4rem;
     display: grid;
     gap: 4rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "o1 o2"
-    "o1 o4"
-    "o3 o4";
+    grid-template-areas:
+        "o1 o2"
+        "o1 o4"
+        "o3 o4";
 
     height: 105rem;
     width: 100rem;
     margin-bottom: 4rem;
     color: var(--main-color);
 }
-#topOffers h2{
+
+#topOffers h2 {
     text-align: left;
     margin-bottom: 2rem;
     text-decoration: none;
 }
-#topOffers>div>img{
+
+#topOffers>div>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition:.3s ;
+    transition: .3s;
     transition-property: filter;
-    
+
 }
-#topOffers>div>img:hover{
+
+#topOffers>div>img:hover {
     cursor: pointer;
     filter: blur(3px);
 }
-#offer1{
+
+#offer1 {
     grid-area: o1;
 }
+
 #offer2 {
     grid-area: o2;
 }
+
 #offer3 {
     grid-area: o3;
 }
+
 #offer4 {
     grid-area: o4;
 }
-.amenityCon{
+
+.amenityCon {
     display: flex;
     gap: 1rem;
     justify-content: space-evenly;
     width: 44rem;
 }
-.amenityCon > div{
+
+.amenityCon>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,40 +292,47 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-.infoCon{
+
+.infoCon {
     position: relative;
     top: -16rem;
     left: 2rem;
 }
-.infoCon:hover{
+
+.infoCon:hover {
     cursor: pointer;
 }
-#about{
+
+#about {
     font-size: 4rem;
     color: var(--main-color);
     text-align: center;
 }
-#noah{
+
+#noah {
     display: flex;
     gap: 4rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
-#noah > img{
+
+#noah>img {
     width: 35%;
     object-position: center;
     object-fit: cover;
     margin-bottom: 4rem;
 }
-#roomSearch{
-    margin:auto;
+
+#roomSearch {
+    margin: auto;
     margin-top: 1rem;
     margin-bottom: 4rem;
     width: 60rem;
     display: flex;
     justify-content: space-between;
 }
-#roomSearch > input{
+
+#roomSearch>input {
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
     width: 12rem;
@@ -298,11 +341,13 @@ h2{
     color: var(--main-color);
     font-family: "laxero";
 }
-#roomSearch > input::-webkit-calendar-picker-indicator {
+
+#roomSearch>input::-webkit-calendar-picker-indicator {
     filter: invert(1);
     transform: scale(1);
 }
-#roomSearch> button {
+
+#roomSearch>button {
     width: 10.5rem;
     border: solid var(--accent-color) .5rem;
     font-size: 1.5rem;
@@ -310,9 +355,11 @@ h2{
     background-color: var(--accent-color);
     font-family: "laxero";
 }
-#roomSearch>button:hover{
+
+#roomSearch>button:hover {
     cursor: pointer;
 }
+
 #roomSearchText {
     margin: auto;
     margin-top: 4rem;
@@ -320,51 +367,60 @@ h2{
     width: 60rem;
     display: flex;
     justify-content: space-between;
-    
+
 }
-#roomSearchText>h3{
+
+#roomSearchText>h3 {
     font-size: 2rem;
     color: var(--main-color);
     margin: 0%;
 }
+
 #roomSearchText>h3:nth-of-type(2) {
     margin-left: 2rem;
 }
+
 #roomSearchText>h3:nth-of-type(3) {
     margin-right: 3.5rem;
 }
+
 #roomSearchText>button {
     width: 10.5rem;
     border: solid var(--accent-color) .5rem;
     visibility: hidden;
     font-family: "laxero";
 }
-#roomCon{
+
+#roomCon {
     display: flex;
     width: 110rem;
     height: 60rem;
     gap: 2rem;
-    grid-template-areas: 
-    "r1 r2 r3"
-    "r4 r5 r6";
+    grid-template-areas:
+        "r1 r2 r3"
+        "r4 r5 r6";
     margin: auto;
     text-decoration: none;
     margin-bottom: 4rem;
     flex-wrap: wrap;
 }
-#roomCon>a{
+
+#roomCon>a {
     text-decoration: none;
     height: 29rem;
 }
-#roomCon >a> img{
+
+#roomCon>a>img {
     width: 35.33rem;
     height: 29rem;
     object-fit: cover;
 }
-#roomCon i{
+
+#roomCon i {
     color: var(--accent-color);
 }
-#roomCon>a>h3{
+
+#roomCon>a>h3 {
     color: var(--main-color);
     font-size: 3rem;
     margin: 0;
@@ -373,6 +429,7 @@ h2{
     top: -28.5rem;
     left: 1rem;
 }
+
 #roomCon>a>div {
     color: var(--main-color);
     font-size: 2.5rem;
@@ -381,46 +438,56 @@ h2{
     top: -11.5rem;
     left: 1rem;
 }
+
 #roomCon>a>div:nth-of-type(1) {
     font-size: 3rem;
     margin-bottom: .5rem;
 }
+
 #roomCon>a>div:nth-of-type(2) {
     text-decoration: underline var(--accent-color) .25rem;
 }
 
 
-#room1{
+#room1 {
     grid-area: r1;
-    
+
 }
+
 #room2 {
     grid-area: r2;
 }
+
 #room3 {
     grid-area: r3;
 }
+
 #room4 {
     grid-area: r4;
 }
+
 #room5 {
     grid-area: r5;
 }
+
 #room6 {
     grid-area: r6;
 }
-#roomCheckout{
-    
+
+#roomCheckout {
+
     display: flex;
     margin: auto;
     margin-top: 4rem;
     width: 110rem;
     height: 25rem;
 }
-#roomCheckout > img{
+
+#roomCheckout>img {
     object-fit: cover;
     width: 70rem;
 }
+
 #roomInfo {
     display: flex;
     gap: 1rem;
@@ -428,7 +495,8 @@ h2{
     width: 12rem;
     margin: auto;
 }
-#roomInfo> input{
+
+#roomInfo>input {
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
     width: 12rem;
@@ -437,10 +505,12 @@ h2{
     color: var(--main-color);
     font-family: "laxero";
 }
+
 #roomInfo>input::-webkit-calendar-picker-indicator {
     filter: invert(1);
     transform: scale(1);
 }
+
 #roomInfo>h3 {
     padding: 1rem;
     width: 12rem;
@@ -449,22 +519,26 @@ h2{
     font-family: "laxero";
     margin: 0%;
 }
-#featureCon{
+
+#featureCon {
     width: 110rem;
     margin: auto;
     margin-bottom: 4rem;
 }
-#featureCon>h1{
+
+#featureCon>h1 {
     font-size: 4rem;
     color: var(--main-color);
 }
+
 #featureCon>div {
     color: var(--main-color);
     display: flex;
     gap: 2rem;
     width: 110rem;
 }
-#featureCon>div>div{
+
+#featureCon>div>div {
     border: var(--accent-color) .5rem solid;
     color: var(--main-color);
     font-size: 2.5rem;
@@ -472,12 +546,14 @@ h2{
     width: 30rem;
     text-align: center;
 }
-#wrapper{
+
+#wrapper {
     display: flex;
     width: 110rem;
     margin: auto;
 }
-#checkout{
+
+#checkout {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -487,7 +563,8 @@ h2{
     height: 25rem;
     gap: 1rem;
 }
-#checkout input{
+
+#checkout input {
     margin-right: 1rem;
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
@@ -497,13 +574,16 @@ h2{
     color: var(--main-color);
     font-family: "laxero";
 }
-#checkout>input{
+
+#checkout>input {
     width: 34.35rem;
 }
-#checkout input::placeholder{
+
+#checkout input::placeholder {
     color: var(--main-color);
 }
-#totals{
+
+#totals {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -513,19 +593,23 @@ h2{
     height: 25rem;
     gap: 1rem;
 }
-#totals > div{
+
+#totals>div {
     color: var(--main-color);
     font-size: 2.5rem;
 }
-#totals hr{
+
+#totals hr {
     width: 70rem;
     height: .3rem;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-#totals button:hover{
+
+#totals button:hover {
     cursor: pointer;
 }
+
 #totals button {
     margin: auto;
     margin-bottom: 0%;
@@ -539,26 +623,30 @@ h2{
     color: var(--main-color);
     font-family: "laxero";
 }
-footer{
+
+footer {
     margin-top: 4rem;
     margin-bottom: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
     font-size: 2rem;
     color: var(--main-color);
-    
+
 }
-#mapText{
-   
+
+#mapText {
+
     font-size: 4rem;
     color: var(--main-color);
     width: 80rem;
     margin: auto;
     margin-top: 4rem;
 }
-#mapText span{
+
+#mapText span {
     text-decoration: underline var(--accent-color) .4rem;
 }
+
 #map {
     height: 40rem;
     width: 80rem;
@@ -566,73 +654,86 @@ footer{
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-#contactText{
+
+#contactText {
     font-size: 4rem;
-        color: var(--main-color);
-        width: 80rem;
-        margin: auto;
-            margin-top: 4rem;
+    color: var(--main-color);
+    width: 80rem;
+    margin: auto;
+    margin-top: 4rem;
 }
-form{
+
+form {
     margin: auto;
     width: 20rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-form > button{
-   
+
+form>button {
+
     margin-bottom: 0%;
     width: 20rem;
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
-    font-size:2.5rem;
+    font-size: 2.5rem;
     background-color: var(--accent-color);
     color: var(--main-color);
     font-family: "laxero";
 }
-#faqT{
+
+#faqT {
     font-size: 4rem;
-        color: var(--main-color);
-        font-weight: normal;
-        text-align: center;
-        text-decoration: underline var(--accent-color) 0.5rem;
+    color: var(--main-color);
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline var(--accent-color) 0.5rem;
 }
-#faq{
+
+#faq {
     margin: auto;
     display: flex;
     flex-direction: column;
     width: 100rem;
     margin-bottom: 4rem;
 }
-#faq > div{
+
+#faq>div {
     font-size: 4rem;
-        color: var(--main-color);
-        width: 100rem;
-        margin: auto;
-        margin-bottom: 1rem;
-        margin-top: 0;
+    color: var(--main-color);
+    width: 100rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 0;
 
 }
-form>button:hover{
+
+form>button:hover {
     cursor: pointer;
 }
-footer p{
+
+footer p {
     text-align: center;
 }
-footer p:nth-of-type(3){
+
+footer p:nth-of-type(3) {
     background-color: var(--accent-color);
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--main-color);
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline var(--accent-color) .20rem;
 }
-footer >div{
+
+footer>div {
     display: flex;
     justify-content: space-evenly;
 }
+
 @media screen and (max-width:1600px) {
     :root {
         font-size: 80%;
@@ -642,6 +743,28 @@ footer >div{
 @media screen and (max-width:1300px) {
     :root {
         font-size: 65%;
+    }
+
+    #roomCon {
+        display: flex;
+        width: 66rem;
+        height: 60rem;
+        gap: 2rem;
+        margin: auto;
+        text-decoration: none;
+        margin-bottom: 35rem;
+        flex-wrap: wrap;
+    }
+
+    #roomCon>a {
+        text-decoration: none;
+        height: 29rem;
+    }
+
+    #roomCon>a>img {
+        width: 32rem;
+        height: 29rem;
+        object-fit: cover;
     }
 }
 
@@ -661,33 +784,48 @@ footer >div{
     :root {
         font-size: 50%;
     }
-        #mainContainer {
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-            gap: 1rem 4rem;
-            display: grid;
-            margin-left: 3rem;
-            margin-right: 3rem;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                "mainI"
-                "mainI"
-                "mainI"
-                "mainI"
-                "mainI"
-                "mainH"
-                "mainT"
-                "book";
-            font-family: "laxero";
-            color: var(--main-color);
-            width: calc(100vw- 6rem);
-        }
-                #mainContainer>h3:nth-of-type(2) {
-                    left: 80rem;
-                    transform: translateX(-50%);
-                    top: calc(9rem + (100vh - 16rem));
-                }
+
+    #mainContainer {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        gap: 1rem 4rem;
+        display: grid;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "mainI"
+            "mainI"
+            "mainI"
+            "mainI"
+            "mainI"
+            "mainH"
+            "mainT"
+            "book";
+        font-family: "laxero";
+        color: var(--main-color);
+        width: calc(100vw- 6rem);
+    }
+
+    #mainContainer>h3:nth-of-type(2) {
+        left: calc((85vw - 6rem));
+        transform: translateX(-50%);
+        top: calc(9rem + (100vh - 16rem));
+    }
+
+    #mainText {
+        font-size: 3rem;
+    }
+
+    #book {
+        font-size: 3rem;
+    }
+
+    #mainHeader {
+        margin-top: 2rem;
+    }
+
     #topOffers {
         margin: auto;
         margin-top: 4rem;
@@ -705,58 +843,203 @@ footer >div{
         margin-bottom: 150rem;
         color: var(--main-color);
     }
-    #noah{
+
+    #noah {
         flex-direction: column;
     }
+
     #noah>img {
-            width: 100%;
-            object-position: center;
-            object-fit: cover;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
         margin-bottom: 2rem;
     }
-        #noah>p{
-            margin-top: 0;
-        }
+
+    #noah>p {
+        margin-top: 0;
+    }
+
+    #mapText {
+        width: 50rem;
+    }
+
+    #map {
+        width: 50rem;
+    }
+
+    #contactText {
+        width: 50rem;
+    }
+
+    #faq {
+        width: 50rem;
+    }
+
+    #faq>div {
+        width: 50rem;
+    }
 }
+
 @media screen and (max-width:600px) {
-    #topOffers{
+    #topOffers {
         width: 48rem;
         margin-bottom: 92rem;
     }
+
+    #roomCon {
+        display: flex;
+        width: 32rem;
+        height: 60rem;
+        gap: 2rem;
+        margin: auto;
+        text-decoration: none;
+        margin-bottom: 128rem;
+        flex-wrap: wrap;
+    }
+
+    #roomCon>a {
+        text-decoration: none;
+        height: 29rem;
+    }
+
+    #roomCon>a>img {
+        width: 32rem;
+        height: 29rem;
+        object-fit: cover;
+    }
+
+    #roomSearchText {
+        flex-wrap: wrap;
+        width: 32rem;
+    }
+
+    #roomSearchText button {
+        display: none;
+    }
+
+    #roomSearch {
+        flex-wrap: wrap;
+        gap: 6rem 2rem;
+        width: 32rem;
+    }
+
+    #roomSearchText>h3:nth-of-type(2) {
+        margin-left: 5rem;
+    }
+
+    #roomSearchText>h3:nth-of-type(3) {
+        position: relative;
+        top: 10rem;
+    }
+
+    #roomSearch>button {
+        width: 15rem;
+
+    }
+
 }
+
 @media screen and (max-width:450px) {
-    nav i, nav> div > a{
+
+    nav i,
+    nav>div>a {
         visibility: hidden;
     }
-    #logo{
+
+    #logo {
         visibility: visible;
     }
-    footer > div{
+
+    footer>div {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
+
     #topOffers {
         width: 30rem;
         margin-bottom: 49rem;
     }
-    #topOffers h2{
+
+    #topOffers h2 {
         font-size: 3rem;
     }
-        .amenityCon {
-            display: flex;
-            gap: 1rem;
-            justify-content: space-evenly;
-            width: 26rem;
-        }
-                .amenityCon>div {
-                    height: 6rem;
-                }
-                                .infoCon {
-                                    position: relative;
-                                    top: -18rem;
-                                    left: 2rem;
-                                }
+
+    .amenityCon {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+        width: 26rem;
+    }
+
+    .amenityCon>div {
+        height: 6rem;
+    }
+
+    .infoCon {
+        position: relative;
+        top: -18rem;
+        left: 2rem;
+    }
+
+    #mainContainer>h3:nth-of-type(2) {
+        left: calc((81vw - 6rem));
+        transform: translateX(-50%);
+        top: calc(9rem + (100vh - 16rem));
+    }
+
+    #mainContainer {
+        margin-top: 4rem;
+        margin-bottom: 14rem;
+        gap: 1rem 4rem;
+        display: grid;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "mainI"
+            "mainI"
+            "mainI"
+            "mainI"
+            "mainI"
+            "mainH"
+            "mainT"
+            "book";
+        font-family: "laxero";
+        color: var(--main-color);
+        width: calc(100vw- 6rem);
+        height: 100rem;
+    }
+
+    #book {
+        height: 7rem;
+        width: 25rem;
+    }
+
+    #mainContainer>h3 {
+        font-size: 5rem;
+    }
+
+    #mapText {
+        width: 30rem;
+    }
+
+    #map {
+        width: 30rem;
+    }
+
+    #contactText {
+        width: 30rem;
+    }
+
+    #faq {
+        width: 30rem;
+    }
+
+    #faq>div {
+        width: 30rem;
+    }
 }
 
 @font-face {
