@@ -565,7 +565,7 @@ h2 {
 }
 
 #checkout input {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
     width: 15rem;
@@ -766,6 +766,10 @@ footer>div {
         height: 29rem;
         object-fit: cover;
     }
+    #checkout{
+        position: relative;
+        left: 3rem;
+    }
     #roomCheckout{
         width: 80rem;
         flex-direction: column;
@@ -788,11 +792,15 @@ footer>div {
         flex-wrap: wrap;
         width: 80rem;
     }
+    #featureCon{
+        width: 80rem;
+    }
         #featureCon>div>div{
             width: 38rem;
         }
         #wrapper{
             flex-direction: column;
+            width: 80rem;
         }
 }
 
@@ -809,6 +817,12 @@ footer>div {
     #totals{
         width: 50rem;
     }
+        #totals hr{
+            width: 50rem;
+        }
+                #totals button {
+                    width: 50rem;
+                }
 }
 
 @media screen and (max-width:850px) {
@@ -909,6 +923,42 @@ footer>div {
     #faq>div {
         width: 50rem;
     }
+    #checkout{
+        position: relative;
+        left: 3rem;
+    }
+    #roomCheckout{
+        width: 50rem;
+        flex-direction: column;
+        margin-bottom: 24rem;
+    }
+        #roomCheckout>img{
+            width: 50rem;
+            height: 40rem;
+        }
+    #roomInfo{
+        flex-direction: row;
+        width: 50rem;
+        justify-content: center;
+    }
+    #featureCon > h1{
+        text-align: center;
+    }
+    #featureCon > div{
+        margin: auto;
+        flex-wrap: wrap;
+        width: 50rem;
+    }
+    #featureCon{
+        width: 50rem;
+    }
+        #featureCon>div>div{
+            width: 23rem;
+        }
+        #wrapper{
+            flex-direction: column;
+            width: 50rem;
+        }
 }
 
 @media screen and (max-width:600px) {
@@ -971,7 +1021,34 @@ footer>div {
 }
 
 @media screen and (max-width:450px) {
-
+    #checkout{
+        width: 30rem;
+    }
+        #checkout input {
+            margin-right: 1.2rem;
+            border: solid var(--accent-color) .5rem;
+            padding: 1rem;
+            width: 10rem;
+            font-size: 1.5rem;
+            background-color: var(--accent-color);
+            color: var(--main-color);
+            font-family: "laxero";
+        }
+    
+        #checkout>input {
+            width: 24.35rem;
+        }
+                #checkout {
+                    position: relative;
+                    left: 1.5rem;
+                }
+                                #roomCheckout>img {
+                                    width: 30rem;
+                                    height: 40rem;
+                                }
+                                                                #roomCheckout{
+                                                                    width: 30rem;
+                                                                }
     nav i,
     nav>div>a {
         visibility: hidden;
@@ -1071,6 +1148,82 @@ footer>div {
     #faq>div {
         width: 30rem;
     }
+        #roomInfo {
+            flex-direction: row;
+            width: 30rem;
+            justify-content: center;
+        }
+    
+        #featureCon>h1 {
+            text-align: center;
+        }
+    
+        #featureCon>div {
+            margin: auto;
+            flex-wrap: wrap;
+            width: 30rem;
+        }
+    
+        #featureCon {
+            width: 30rem;
+        }
+    
+        #featureCon>div>div {
+            width: 13rem;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        #wrapper {
+            flex-direction: column;
+            width: 30rem;
+        }
+                #totals {
+                    width: 30rem;
+                }
+        
+                #totals hr {
+                    width: 30rem;
+                }
+        
+                #totals button {
+                    width: 30rem;
+                    margin-top: 4rem;
+                }
+    #roomInfo{
+        flex-wrap: wrap;
+        width: 30rem;
+        flex-direction: row;
+        
+    }
+        #roomInfo:nth-of-type(1) {
+            gap: 0rem 2rem;
+        }
+    #roomInfo:nth-of-type(2){
+        gap: 6rem 2rem;
+    }
+        #roomInfo input {
+            width: 11rem;
+        }
+                #roomInfo h3:nth-of-type(1) {
+                    position: relative;
+                    top: 4rem;
+                }
+        
+                #roomInfo h3:nth-of-type(2) {
+                    position: relative;
+                    top: 4rem;
+                }
+                #roomInfo h3:nth-of-type(3) {
+                    position: relative;
+                        top: 10rem;
+                }
+                                #roomInfo h3:nth-of-type(4) {
+                                    position: relative;
+                                    top: 10rem;
+                                }
 }
 
 @font-face {
