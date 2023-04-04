@@ -473,6 +473,11 @@ h2{
     width: 30rem;
     text-align: center;
 }
+#wrapper{
+    display: flex;
+    width: 110rem;
+    margin: auto;
+}
 #checkout{
     display: flex;
     flex-direction: column;
@@ -498,6 +503,42 @@ h2{
 }
 #checkout input::placeholder{
     color: var(--main-color);
+}
+#totals{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    width: 70rem;
+    height: 25rem;
+    gap: 1rem;
+}
+#totals > div{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+#totals hr{
+    width: 70rem;
+    height: .3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#totals button:hover{
+    cursor: pointer;
+}
+#totals button {
+    margin: auto;
+    margin-bottom: 0%;
+    width: 60rem;
+    position: relative;
+    top: 2.2rem;
+    border: solid var(--accent-color) .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-family: "laxero";
 }
 footer{
     margin-top: 4rem;

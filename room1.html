@@ -51,7 +51,7 @@
             <input type="date" value="2023-04-04" required min="2023-04-04">
             <input type="date" value="2023-04-05" required min="2023-04-04">
             <input type="number" value="2" required min="1" max="2">
-            <input type="number" value="1" required min="1" max="10" onchange="reprice()">
+            <input id="c450" type="number" value="1" required min="1" max="10" onchange="reprice()">
         </div>
     </div>
     <div id="featureCon">
@@ -66,22 +66,29 @@
         </div>
     </div>
     <hr>
-    <div id="checkout">
-        <div>
-            <input type="text" name="" id="" placeholder="Card Number">
-            <input type="text" name="" id="" placeholder="MM/YY">
+    <div id="wrapper">
+        <div id="checkout">
+            <div>
+                <input type="text" name="" id="" placeholder="Card Number">
+                <input type="text" name="" id="" placeholder="MM/YY">
+            </div>
+            <div>
+                <input type="text" name="" id="" placeholder="First Name">
+                <input type="text" name="" id="" placeholder="Last Name">
+            </div>
+            <input type="text" name="" id="" placeholder="Billing Address">
+            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Phone Number">
         </div>
-        <div>
-            <input type="text" name="" id="" placeholder="First Name">
-            <input type="text" name="" id="" placeholder="Last Name">
+        <div id="totals">
+            <div>Amount Due:</div>
+            <div>Tax:</div>
+            <hr>
+            <div>Total:</div>
+            <button onclick="checkout()">Checkout</button>
         </div>
-        <input type="text" name="" id="" placeholder="Billing Address">
-        <input type="text" name="" id="" placeholder="Email">
-        <input type="text" name="" id="" placeholder="Phone Number">
     </div>
-    <div id="totals">
-
-    </div>
+    
         
     <hr>
     <footer>
