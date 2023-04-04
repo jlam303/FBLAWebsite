@@ -1,4 +1,4 @@
-let roomDate =[4,3,6,1,7,2]
+let roomDate =[8,6,12,4,14,4]
 let roomGuests =[2,2,6,1,6,4]
 function search(){
     let checkIn = document.querySelector("#roomSearch input:nth-of-type(1)").value;

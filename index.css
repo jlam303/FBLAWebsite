@@ -245,7 +245,7 @@ h2{
     display: flex;
     gap: 1rem;
     justify-content: space-evenly;
-    width: 35vw;
+    width: 50rem;
 }
 .amenityCon > div{
     display: flex;
@@ -259,7 +259,7 @@ h2{
 }
 .infoCon{
     position: relative;
-    top: -17rem;
+    top: -16rem;
     left: 2rem;
 }
 .infoCon:hover{
@@ -350,7 +350,7 @@ h2{
     "r4 r5 r6";
     margin: auto;
     text-decoration: none;
-    margin-bottom: 14rem;
+    margin-bottom: 4rem;
     flex-wrap: wrap;
 }
 #roomCon>a{
@@ -390,6 +390,7 @@ h2{
     text-decoration: underline var(--accent-color) .25rem;
 }
 
+
 #room1{
     grid-area: r1;
     
@@ -408,6 +409,95 @@ h2{
 }
 #room6 {
     grid-area: r6;
+}
+#roomCheckout{
+    
+    display: flex;
+    margin: auto;
+    margin-top: 4rem;
+    width: 110rem;
+    height: 25rem;
+}
+#roomCheckout > img{
+    object-fit: cover;
+    width: 70rem;
+}
+#roomInfo {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 12rem;
+    margin: auto;
+}
+#roomInfo> input{
+    border: solid var(--accent-color) .5rem;
+    padding: 1rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-family: "laxero";
+}
+#roomInfo>input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    transform: scale(1);
+}
+#roomInfo>h3 {
+    padding: 1rem;
+    width: 12rem;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-family: "laxero";
+    margin: 0%;
+}
+#featureCon{
+    width: 110rem;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+#featureCon>h1{
+    font-size: 4rem;
+    color: var(--main-color);
+}
+#featureCon>div {
+    color: var(--main-color);
+    display: flex;
+    gap: 2rem;
+    width: 110rem;
+}
+#featureCon>div>div{
+    border: var(--accent-color) .5rem solid;
+    color: var(--main-color);
+    font-size: 2.5rem;
+    height: 3rem;
+    width: 30rem;
+    text-align: center;
+}
+#checkout{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    width: 40rem;
+    height: 25rem;
+    gap: 1rem;
+}
+#checkout input{
+    margin-right: 1rem;
+    border: solid var(--accent-color) .5rem;
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-family: "laxero";
+}
+#checkout>input{
+    width: 34rem;
+}
+#checkout input::placeholder{
+    color: var(--main-color);
 }
 footer{
     margin-top: 4rem;
@@ -435,6 +525,7 @@ footer >div{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 @font-face {
     font-family: "laxero";
