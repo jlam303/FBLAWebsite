@@ -3,11 +3,17 @@
     --main-color: white;
     --accent-color: #EC0B43;
 }
+@media screen and (max-width:1600px) {
+    :root {
+        font-size: 80%;
+    }
+}
 @media screen and (max-width:1300px){
     :root{
         font-size: 65%;
     }
 }
+
 body {
     font-family: "laxero";
     margin: 0%;
@@ -499,7 +505,7 @@ h2{
     font-family: "laxero";
 }
 #checkout>input{
-    width: 34rem;
+    width: 34.35rem;
 }
 #checkout input::placeholder{
     color: var(--main-color);
@@ -532,7 +538,7 @@ h2{
     margin-bottom: 0%;
     width: 60rem;
     position: relative;
-    top: 2.2rem;
+    top: 2.75rem;
     border: solid var(--accent-color) .5rem;
     padding: 1rem;
     font-size: 1.5rem;
