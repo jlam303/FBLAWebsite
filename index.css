@@ -766,6 +766,34 @@ footer>div {
         height: 29rem;
         object-fit: cover;
     }
+    #roomCheckout{
+        width: 80rem;
+        flex-direction: column;
+        margin-bottom: 28rem;
+    }
+        #roomCheckout>img{
+            width: 80rem;
+            height: 40rem;
+        }
+    #roomInfo{
+        flex-direction: row;
+        width: 80rem;
+        justify-content: center;
+    }
+    #featureCon > h1{
+        text-align: center;
+    }
+    #featureCon > div{
+        margin: auto;
+        flex-wrap: wrap;
+        width: 80rem;
+    }
+        #featureCon>div>div{
+            width: 38rem;
+        }
+        #wrapper{
+            flex-direction: column;
+        }
 }
 
 @media screen and (max-width:1100px) {
@@ -777,6 +805,9 @@ footer>div {
 @media screen and (max-width:900px) {
     :root {
         font-size: 50%;
+    }
+    #totals{
+        width: 50rem;
     }
 }
 
